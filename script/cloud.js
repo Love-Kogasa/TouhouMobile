@@ -24,7 +24,9 @@ if( $GET !== void 0 && typeof $GET[ "page" ] === "string" ){
           text : "复制成功w",
           icon : "success",
           button : "知道啦"
-        } ) }
+        } )
+        return true
+    }
     to.onclick = function(){
         window.location.href = url.value;}
 }
