@@ -44,7 +44,7 @@ var touhouMobile = {
         },
         "TouhouMix" : {
             url : "https://1drv.ms/u/s!AmYepo2o3RhwefVJND48zOMU0Eg?e=Jhr6Jx",
-            info : "一个相当好的车万音游手游",
+            info : "一个相当好的车万音游手游<br>",
             star : 5
         }
     },
@@ -91,6 +91,23 @@ var touhouMobile = {
         "⑨的完美算数教室(游戏)" : {
             url : "#",
             info : "BAKA BAKA<br>",
+            star : 5
+        }
+    },
+    非 : {
+        "Mc车万皮肤集合" : {
+            url : "https://www.lanzouh.com/iGlCS25plc4f",
+            info : "东方Project Minecraft皮肤集合<br>",
+            star : 5
+        },
+        "互动壁纸" : {
+            url : "https://www.lanzouh.com/i9RZq25plc9a",
+            info : "车万角色的互动壁纸，挺有意思的w<br>",
+            star : 5
+        },
+        "一些PDF资源" : {
+            url : "https://www.lanzouh.com/iVcz025pld1i",
+            info : "一些Pdf资源，建议新人看看w<br>",
             star : 5
         }
     }
