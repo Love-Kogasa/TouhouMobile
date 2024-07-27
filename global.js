@@ -42,5 +42,40 @@ var touhouMobile = {
             info : "BAKA BAKA",
             star : 5
         }
+        "踢屁股大赛" : {
+            url : "https://www.lanzouh.com/ix3N625pac9e",
+            info : "蓄力把各种角色踢到尽可能远的地方吧！提取码thm",
+            star : 4
+        }
+        "觉觉地牢" : {
+            url : "https://www.lanzouh.com/i1gLv25paeuh",
+            info : "扮演地灵殿的角色的地牢游戏，提取码thm",
+            star : 4
+        }
+        "夜临东方地下城GS1.6" : {
+            url : "https://www.lanzouh.com/ij6vV25paf0d",
+            info : "地下城RPG游戏，提取码thm",
+            star : 4
     }
+        "夜临东方地下城1.8.9" : {
+            url : "https://www.lanzouh.com/iZLOe25paf9c",
+            info : "地下城RPG游戏，提取码thm",
+            star : 4
+        }
+         "厝Chuuo：私は厝" : {
+            url : "https://www.lanzouh.com/icYYZ25paeli",
+            info : "提供者并没有写描述呢，提取码thm",
+            star : 3
+        }
+         "东方觉恋想" : {
+            url : "https://www.lanzouh.com/iVwfC25pcy9i",
+            info : "围绕地灵殿展开的stg作，提取码thm",
+            star : 4
+        }
+         "ダンカグライク" : {
+            url : "https://www.lanzouh.com/iB8gP25pcx8b",
+            info : "提供者为添加描述，提取码thm",
+            star : 3
+        }
+}
 }
