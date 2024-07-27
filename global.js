@@ -94,7 +94,7 @@ var touhouMobile = {
             star : 4
         },
         "⑨的完美算数教室(游戏)" : {
-            url : "#",
+            url : "https://www.lanzouh.com/i3MQC25pogve",
             info : "BAKA BAKA<br>",
             star : 5
         }
