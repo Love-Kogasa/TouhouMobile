@@ -1,0 +1,126 @@
+body {
+    background-image : url( "bg.jpg" );
+    background-size : auto 100%;
+    background-position : center;
+    padding : 5%;
+}
+
+h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ type="text" ], textarea, [fw] {
+    display : block;
+}
+
+* {
+    transition : all 0.5s ease-in-out;
+}
+
+top {
+    position : fixed;
+    top : 0; left : 0;
+    width : 100%;
+    background-color : #FBB;
+    padding : 5px;
+    padding-left : 20px;
+    padding-right : 20px;
+    font-size : 145%;
+    box-shadow : 0px 1px 5px #FBB,
+      0px 1px 20px #DDD;
+}
+
+fixed {
+    position : fixed;
+    top : 79%; left : 70%;
+    background-color : #FCC;
+    font-size : 125%;
+    box-shadow : 0px 1px 1px #777;
+    padding : 10px;
+}
+
+h {
+    font-size : 200%;
+    border-bottom : 1px solid #ECC;
+    padding-left : 10px;
+    color : #FDD;
+}
+
+bl, [bl] {
+    border-left : 2px solid #EAA;
+    color : #FBB;
+    padding-left : 10px;
+}
+
+btn, [btn] {
+    padding : 2px;
+    padding-left : 10px;
+    padding-right : 10px;
+    background-color : #FBB;
+    color : #FFF;
+}
+
+[pd] {
+    padding : 6px;
+    padding-left : 15px;
+    padding-right : 15px;
+}
+
+a, a[href] {
+    text-decoration : none;
+    color : #FBB;
+}
+
+tab {
+    width : 100%;
+    /*background-color : #A44;*/
+}
+
+tab name, tab content {
+    padding : 2px;
+}
+
+tab name {
+    background-color : #FBB;
+    font-size : 140%;
+    padding-left : 10px;
+    padding-right : 10px;
+    width : 94.5%;
+    border-bottom : 3px solid #FAA;
+}
+
+tab:hover content,
+tab content:hover {
+    background-color : rgba( 244, 127, 127, 0.1 );
+    z-index : 2;
+    padding-left : 5px;
+    padding-right : 5px;
+    backdrop-filter : blur(2px);
+}
+
+tab content {
+    display : none;
+}
+
+input[ type="text" ], textarea, input[ type="text" ]:focus, textarea:focus {
+    width : 70%;
+    border : none;
+    outline : none;
+    background-color : rgba( 244, 127, 127, 0.1 );
+    backdrop-filter : blur(3px);
+    color : #FFF;
+    padding-left : 10px;
+    padding-right : 10px;
+}
+
+textarea {
+    height : 10%;
+}
+
+[fw] {
+    width : 100%;
+}
+
+[ps] {
+    top : 83%;
+}
+
+btn:active, [btn]:active {
+    background-color : #FAA;
+}
