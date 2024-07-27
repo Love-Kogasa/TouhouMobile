@@ -4,8 +4,8 @@ var inp = document.getElementById( "inp" ),
   dow = document.getElementById( "d" ),
   share = document.getElementById( "share" )
 get.onclick = function(){
-    img.src = d.href = `https://pixiv.re/${inp.value}.png`
-    d.download = `${inp.value}.png`; }
+    img.src = dow.href = `https://pixiv.re/${inp.value}.png`
+    dow.download = `${inp.value}.png`; }
 share.onclick = function(){
     navigator.clipboard.writeText( img.src ).then( function(){
         if( img.src !== window.location.href ){
