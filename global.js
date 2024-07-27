@@ -127,6 +127,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/irTns25q70cd",
             info : "东方x西瓜，可以在融合中解密的RPG游戏<br>",
             star : 4
+        },
+        "东方幻想乡防卫记" : {
+            url : "https://www.lanzouh.com/iuo1l25q7ech",
+            info : "上面那个东方幻想乡防卫记的二代，塔防游戏<br>",
+            star : 5
         }
     },
     非 : {
