@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="TouhouMobile 前端云">
+    <title>TouhouMobile - 前端云</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./script/param.js"></script>
+    <script src="./module/sweetalert.min.js"></script>
+    <script src="./module/marked.min.js"></script>
+    <script src="./script/topele.js"></script>
+  </head>
+  <body>
+    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - 前端云</h>
+    <div pd><bl>
+      这里是TouhouMobile提供的前端云<br>
+      作为中转页面使用w<br>
+      也支持储存较小的文件
+    </bl></div><br>
+    <h id="title">设置页面</h>
+    <div pd id="page" style="color : #FDD;">
+      <bl>
+        <b>页面标题</b> :
+          <input type="text" id="header">
+        <b>页面正文</b> :
+          <textarea id="body">输入你想转达的内容叭 ~</textarea>
+        • 正文支持Markdown哦w<br>
+        • 除正文和抄题外都是选填的w<br>
+        <b>页面链接</b> : 
+          <input type="text" id="link">
+        <b>跳转按钮</b> : 
+          <input type="text" id="btn">
+        <br>
+        • 生成的URL↓
+        <input type="text" id="url">
+        TouhouMobile 前端云
+      </bl>
+        <br><br><br><br>
+        <div align="right">
+          <btn id="to">生成页面w</btn>
+        </div>
+    </div>
+    <script src="./script/cloud.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="车万Project 手机资源">
+    <title>TouhouMobile - Pixiv</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./module/sweetalert.min.js"></script>
+    <script src="./script/topele.js"></script>
+  </head>
+  <body>
+    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - Pixiv</h>
+    <div pd><bl>
+      这里是基于Pixivcat搭建的Pixiv图片获取器<br>
+      用于获取Pixiv图片w<br>
+      单图 : pid 多图 : pid-p
+    </bl></div><br>
+    <h>TouhouMobile - 获取器</h>
+    <div pd>
+      <span style="font-size: 120%;color : #FCC;">要获取的图片w</span> : <input type="text" style="width : 100%;" id="inp">
+      <btn fw style="width : 94.5%;" id="get">获取</btn>
+      <img src="" title="无图片" id="img" width="99.9%" style="border : none; backdrop-filter: blur( 3px );">
+      <fixed btn><a href="#" style="color : #FFF;" id="d">下载图片w</a></fixed>
+      <fixed btn ps id="share">分享图片w</fixed>
+    </div>
+    <script src="./script/pixiv.js"></script>
+  </body>
+</html>

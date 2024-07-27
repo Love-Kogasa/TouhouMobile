@@ -1,0 +1,36 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="车万Project 手机资源">
+    <title>TouhouMobile - API文档</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./module/sweetalert.min.js"></script>
+    <script src="./script/topele.js"></script>
+  </head>
+  <body>
+    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - API</h>
+    <div pd><bl>
+      TouhouMobile 提供了一个API<br>
+      用于实时访问THM的应用列表数据
+    </bl></div><br>
+    <h>TouhouMobile - Doc</h>
+    <div pd><bl>
+      提供了一个全局变量touhouMobile<br>
+      结构为 touhouMobile > 游戏类型 > 游戏对象<br>
+      游戏对象包含 <ul>
+        • info 信息<br>
+        • url 可用下载链接<br>
+        • star 评星(THM评星)
+      </ul>
+      The End
+    </bl></div>
+    <fixed btn onclick="(function(){
+      navigator.clipboard.writeText( window.location.href.slice( 0, window.location.href.lastIndexOf( '/' ) ) + '/global.js' ).then( function(){
+        swal( 'okk', '复制成功', 'success' )
+      })
+    })()">复制API地址</fixed>
+  </body>
+</html>
