@@ -10,4 +10,4 @@ TouhouMobile 简称 THM<br>
 这样就可以省去寻找车万手机资源的时间啦
 </ul>
 <hr>
-<div align="right"><a href="#">启动！w</a></div>
+<div align="right"><a href="https://love-kogasa.github.io/TouhouMobile/">启动！w</a></div>
