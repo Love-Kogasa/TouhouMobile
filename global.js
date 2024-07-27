@@ -27,60 +27,71 @@ var touhouMobile = {
         },
         "BakaSTG" : {
             url : "http://m.downcc.com/d/284948",
-            info : "一个经典风的车万STG手游<br>手感不错，风格也很不错w<br>https://minagi.me/archives/1552",
+            info : "一个经典风的车万STG手游<br>手感不错，风格也很不错w<br>https://minagi.me/archives/1552<br>",
             star : 4
         },
         "弹幕游戏" : {
             url : "http://m.downcc.com/d/284934",
-            info : "类似于上者，也是一个经典风的车万STG手游<br>总体来说还是挺不错的",
+            info : "类似于上者，也是一个经典风的车万STG手游<br>总体来说还是挺不错的<br>",
             star : 4
         }
     },
-    其他 : {
-        "⑨的完美算数教室(游戏)" : {
-            url : "#",
-            info : "BAKA BAKA",
-            star : 5
+    音游 : {
+        "ダンカグライク" : {
+            url : "https://www.lanzouh.com/iB8gP25pcx8b",
+            info : "提供者未添加描述<br>",
+            star : 3
         },
-        "踢屁股大赛" : {
-            url : "https://www.lanzouh.com/ix3N625pac9e",
-            info : "蓄力把各种角色踢到尽可能远的地方吧！提取码thm",
+        "TouhouMix" : {
+            url : "https://qm.qq.com/q/olNBS73vpu",
+            info : "一个相当好的车万音游手游<br>下载链接分享的朋友找不到了，进群下载叭<br>",
+            star : 5
+        }
+    },
+    回合制 : {
+        "东方异想穴" : {
+            url : "http://m.downcc.com/d/347952",
+            info : "一个挺不错的车万同人回合制游戏<br>后期很爽w<br>",
             star : 4
         },
+        "东方地阴风" : {
+            url : "https://www.lanzouh.com/i6CEG25pdm0d",
+            info : "3D风回合制游戏，暂无汉化<br>",
+            star : 3
+        }
+    },
+    地牢 : {
         "觉觉地牢" : {
             url : "https://www.lanzouh.com/i1gLv25paeuh",
-            info : "扮演地灵殿的角色的地牢游戏，提取码thm",
+            info : "扮演地灵殿的角色的地牢游戏<br>",
             star : 4
         },
         "夜临东方地下城GS1.6" : {
             url : "https://www.lanzouh.com/ij6vV25paf0d",
-            info : "地下城RPG游戏，提取码thm",
+            info : "地下城RPG游戏<br>",
             star : 4
         },
         "夜临东方地下城1.8.9" : {
             url : "https://www.lanzouh.com/iZLOe25paf9c",
-            info : "地下城RPG游戏，提取码thm",
+            info : "地下城RPG游戏<br>",
             star : 4
         },
-         "厝Chuuo：私は厝" : {
+        "厝Chuuo：私は厝" : {
             url : "https://www.lanzouh.com/icYYZ25paeli",
-            info : "地牢类游戏，提取码thm",
-            star : 3
-        },
-         "ダンカグライク" : {
-            url : "https://www.lanzouh.com/iB8gP25pcx8b",
-            info : "提供者为添加描述，提取码thm",
-            star : 3
-        },
-        "东方地阴风" : {
-            url : "https://www.lanzouh.com/i6CEG25pdm0d",
-            info : "3D风回合制游戏，暂无汉化，提取码thm",
+            info : "地牢类游戏<br>",
             star : 3
         }
-        "TouHouMix" : {
-            url : "https://1drv.ms/u/s!AmYepo2o3RhwefVJND48zOMU0Eg?e=Jhr6Jx",
-            info : "东方音游，界面手感非常不错，比较推荐",
+    },
+    其他 : {
+        "踢屁股大赛" : {
+            url : "https://www.lanzouh.com/ix3N625pac9e",
+            info : "蓄力把各种角色踢到尽可能远的地方吧<br><s>好胃炎的馆主www</s><br>",
             star : 4
+        },
+        "⑨的完美算数教室(游戏)" : {
+            url : "#",
+            info : "BAKA BAKA<br>",
+            star : 5
         }
     }
 }
