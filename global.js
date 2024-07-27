@@ -43,8 +43,8 @@ var touhouMobile = {
             star : 3
         },
         "TouhouMix" : {
-            url : "https://qm.qq.com/q/olNBS73vpu",
-            info : "一个相当好的车万音游手游<br>下载链接分享的朋友找不到了，进群下载叭<br>",
+            url : "https://1drv.ms/u/s!AmYepo2o3RhwefVJND48zOMU0Eg?e=Jhr6Jx",
+            info : "一个相当好的车万音游手游",
             star : 5
         }
     },
