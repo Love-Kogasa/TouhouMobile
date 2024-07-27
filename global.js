@@ -77,5 +77,10 @@ var touhouMobile = {
             info : "3D风回合制游戏，暂无汉化，提取码thm",
             star : 3
         }
+        "TouHouMix" : {
+            url : "https://1drv.ms/u/s!AmYepo2o3RhwefVJND48zOMU0Eg?e=Jhr6Jx",
+            info : "东方音游，界面手感非常不错，比较推荐",
+            star : 4
+        }
     }
 }
