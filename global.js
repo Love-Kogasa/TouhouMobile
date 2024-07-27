@@ -98,6 +98,11 @@ var touhouMobile = {
             info : "BAKA BAKA<br>",
             star : 5
         }
+         "雏酱Breaker 2nd.break" : {
+            url : "https://pan.baidu.com/s/1pWeBWLB_SG-alJ71E93Yag",
+            info : "键山雏横板对战手游，暂无汉化，提取码thmm<br>",
+            star : 5
+        }
     },
     非 : {
         "Mc车万皮肤集合" : {
