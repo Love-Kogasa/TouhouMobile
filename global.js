@@ -102,6 +102,31 @@ var touhouMobile = {
             url : "https://pan.baidu.com/s/1pWeBWLB_SG-alJ71E93Yag",
             info : "键山雏横板对战手游，暂无汉化，提取码thmm<br>",
             star : 5
+        },
+         "蕾米莉亚的晚餐(汉化)" : {
+            url : "https://www.lanzouh.com/ibwO125q4xlc",
+            info : "和上面的雏酱和踢屁股大赛是同一个作者，非常不错的东方小游戏口牙<br>",
+            star : 5
+        },
+         "东方幻想乡防卫记" : {
+            url : "https://www.lanzouh.com/i2d2G25q4whc",
+            info : "东方塔防游戏<br>",
+            star : 5
+        },
+         "东方FM" : {
+            url : "https://www.lanzouh.com/i66uE25q5o7a",
+            info : "可以连接到来自幻想乡的电台，非常不错的小软件<br>",
+            star : 4
+        },
+         "东方消消乐" : {
+            url : "https://www.lanzouh.com/ij4yS25q70fg",
+            info : "东方主题的消消乐游戏，连成三个即可消掉<br>",
+            star : 4
+        },
+         "东方融合解密RPG" : {
+            url : "https://www.lanzouh.com/irTns25q70cd",
+            info : "东方x西瓜，可以在融合中解密的RPG游戏<br>",
+            star : 4
         }
     },
     非 : {
