@@ -77,5 +77,5 @@ var touhouMobile = {
             info : "提供者为添加描述，提取码thm",
             star : 3
         }
-}
+    },
 }
