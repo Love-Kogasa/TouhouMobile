@@ -64,7 +64,7 @@ var touhouMobile = {
         },
          "厝Chuuo：私は厝" : {
             url : "https://www.lanzouh.com/icYYZ25paeli",
-            info : "提供者并没有写描述呢，提取码thm",
+            info : "地牢类游戏，提取码thm",
             star : 3
         },
          "东方觉恋想" : {
