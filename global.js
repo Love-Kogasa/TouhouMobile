@@ -114,7 +114,7 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iVcz025pld1i",
             info : "一些Pdf资源，建议新人看看w<br>",
             star : 5
-        }
+        },
         "东方圣诞节主题头像" : {
             url : "https://www.lanzouh.com/i3Dcv25pnkub",
             info : "东方角色圣诞节主题头像，提取码thm",
