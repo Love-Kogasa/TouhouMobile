@@ -6,8 +6,8 @@ var touhouMobile = {
             star : 5
         },
         "东方恋觉想" : {
-            url : "https://m.newasp.com/android/654650.html",
-            info : "一个手机独占的车万STG作<br>用的来说很不错<br>手感差一些<br>",
+            url : "https://www.lanzouh.com/iVwfC25pcy9i",
+            info : "一个手机独占的围绕地灵殿展开的stg作<br>总的来说很不错<br>手感差一些<br>",
             star : 4
         },
         "东方千夜帖" : {
@@ -56,7 +56,7 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/ij6vV25paf0d",
             info : "地下城RPG游戏，提取码thm",
             star : 4
-    },
+        },
         "夜临东方地下城1.8.9" : {
             url : "https://www.lanzouh.com/iZLOe25paf9c",
             info : "地下城RPG游戏，提取码thm",
@@ -67,11 +67,6 @@ var touhouMobile = {
             info : "地牢类游戏，提取码thm",
             star : 3
         },
-         "东方觉恋想" : {
-            url : "https://www.lanzouh.com/iVwfC25pcy9i",
-            info : "围绕地灵殿展开的stg作，提取码thm",
-            star : 4
-        },
          "ダンカグライク" : {
             url : "https://www.lanzouh.com/iB8gP25pcx8b",
             info : "提供者为添加描述，提取码thm",
@@ -81,8 +76,6 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/i6CEG25pdm0d",
             info : "3D风回合制游戏，暂无汉化，提取码thm",
             star : 3
-        },
-
-        
-    },
+        }
+    }
 }
