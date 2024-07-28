@@ -6,7 +6,7 @@ var touhouMobile = {
             star : 5
         },
         "东方恋觉想" : {
-            url : "https://www.lanzouh.com/iVwfC25pcy9i",
+            url : "https://www.lanzouh.com/i76S725t076f",
             info : "一个手机独占的围绕地灵殿展开的stg作<br>总的来说很不错<br>手感差一些<br>",
             star : 4
         },
@@ -38,7 +38,7 @@ var touhouMobile = {
     },
     音游 : {
         "ダンカグライク" : {
-            url : "https://www.lanzouh.com/iB8gP25pcx8b",
+            url : "https://www.lanzouh.com/irq9p25t005c",
             info : "提供者未添加描述<br>",
             star : 3
         },
@@ -67,39 +67,39 @@ var touhouMobile = {
     },
     地牢 : {
         "觉觉地牢" : {
-            url : "https://www.lanzouh.com/i1gLv25paeuh",
+            url : "https://www.lanzouh.com/iirjj25t0a5c",
             info : "扮演地灵殿的角色的地牢游戏<br>",
             star : 4
         },
         "夜临东方地下城GS1.6" : {
-            url : "https://www.lanzouh.com/ij6vV25paf0d",
+            url : "https://www.lanzouh.com/iF1Sx25t0exe",
             info : "地下城RPG游戏<br>",
             star : 4
         },
         "夜临东方地下城1.8.9" : {
-            url : "https://www.lanzouh.com/iZLOe25paf9c",
+            url : "https://www.lanzouh.com/ibmOk25t0fxac",
             info : "地下城RPG游戏<br>",
             star : 4
         },
         "厝Chuuo：私は厝" : {
-            url : "https://www.lanzouh.com/icYYZ25paeli",
+            url : "https://www.lanzouh.com/i4Yfj25t02kj",
             info : "地牢类游戏<br>",
             star : 3
         },
          "东方像素地牢" : {
-            url : "https://www.lanzouh.com/iGoFf25s4sra",
+            url : "https://www.lanzouh.com/iuaH525szxrg",
             info : "像素地牢是一个非常经典的地牢游戏，这个是东方版的",
             star : 4
          }
     },
     其他 : {
         "踢屁股大赛" : {
-            url : "https://www.lanzouh.com/ix3N625pac9e",
+            url : "https://www.lanzouh.com/iBU4R25t0daf",
             info : "蓄力把各种角色踢到尽可能远的地方吧<br><s>好胃炎的馆主www</s><br>",
             star : 4
         },
         "⑨的完美算数教室(游戏)" : {
-            url : "https://www.lanzouh.com/i3MQC25pogve",
+            url : "https://www.lanzouh.com/isCIM25t0cuj",
             info : "BAKA BAKA<br>",
             star : 5
         },
@@ -109,31 +109,31 @@ var touhouMobile = {
             star : 5
         },
          "蕾米莉亚的晚餐(汉化)" : {
-            url : "https://www.lanzouh.com/ibwO125q4xlc",
+            url : "https://www.lanzouh.com/i2PP425t0b0d",
             info : "和上面的雏酱和踢屁股大赛是同一个作者，非常不错的东方小游戏口牙<br>",
             star : 5
         },
          "东方幻想乡防卫记" : {
-            url : "https://www.lanzouh.com/i2d2G25q4whc",
+            url : "https://www.lanzouh.com/i0eAu25t04ri",
             info : "东方塔防游戏<br>",
             star : 5
         },
          "东方FM" : {
-            url : "https://www.lanzouh.com/i66uE25q5o7a",
+            url : "https://www.lanzouh.com/iQ3Vr25szxuj",
             info : "可以连接到来自幻想乡的电台，非常不错的小软件<br>",
             star : 4
         },
          "东方消消乐" : {
-            url : "https://www.lanzouh.com/ij4yS25q70fg",
+            url : "https://www.lanzouh.com/iRYKi25t092d",
             info : "东方主题的消消乐游戏，连成三个即可消掉<br>",
             star : 4
         },
          "东方融合解密RPG" : {
-            url : "https://www.lanzouh.com/irTns25q70cd",
+            url : "https://www.lanzouh.com/ibWo625t08rc",
             info : "东方x西瓜，可以在融合中解密的RPG游戏<br>",
             star : 4
         },
-        "东方幻想乡防卫记" : {
+        "东方幻想乡防卫记2" : {
             url : "https://www.lanzouh.com/iuo1l25q7ech",
             info : "上面那个东方幻想乡防卫记的二代，塔防游戏<br>",
             star : 5
@@ -161,7 +161,7 @@ var touhouMobile = {
             star : 4
         },
          "Google Play" : {
-            url : "https://www.lanzouh.com/i7K6f25s565c",
+            url : "https://www.lanzouh.com/ishnY25szwud",
             info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行",
             star : 5
          }
