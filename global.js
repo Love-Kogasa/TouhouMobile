@@ -85,7 +85,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/icYYZ25paeli",
             info : "地牢类游戏<br>",
             star : 3
-        }
+        },
+         "东方像素地牢" : {
+            url : "https://www.lanzouh.com/iGoFf25s4sra",
+            info : "像素地牢是一个非常经典的地牢游戏，这个是东方版的",
+            star : 4
     },
     其他 : {
         "踢屁股大赛" : {
@@ -158,6 +162,6 @@ var touhouMobile = {
          "Google Play" : {
             url : "https://www.lanzouh.com/i7K6f25s565c",
             info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行",
-            star : 4
+            star : 5
     }
 }
