@@ -1,0 +1,54 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="Python Online">
+    <title>TouhouMobile - Pyonline</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="../module/sweetalert.min.js"></script>
+    <script src="../module/download.min.js"></script>
+    <script src="../module/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+    <script src="../script/param.js"></script>
+    <script src="../script/tools/runpy.js"></script>
+    <script>function back(){
+      window.location.href = "../index.html"
+    }</script>
+  </head>
+  <body onload="main( [ file, sub, inp, log, share ] )">
+    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - Pyonline</h>
+    <div pd><bl>
+      TouhouMobile PyOnline<br>
+      在浏览器上编写执行并分享你的脚本awa<br>
+      支持input方法<br>
+      增加download方法，提供下载功能<br>
+      详见download.js
+    </bl></div><br>
+    <h>TouhouMobile - Console</h>
+    <div pd>
+      <div id="log" style="
+        background-color : #222;
+        border-left : 4px solid #EEE;
+        padding : 2%;
+        width : 92%;
+        color : #FFF;
+        min-height : 400px;
+      ">Py执行前需要等待一段时间用来加载文件<br>时间不会很长，大部分地区不需要VPN<br></div>
+    </div>
+    <h>TouhouMobile - 编写脚本</h>
+    <div pd>
+      <bl>
+        选择Py文件 :
+        <input type="file" id="file"><br>
+        或编写Py脚本
+        <textarea id="inp">print("hello")</textarea>
+        <br>
+        <btn id="sub">启动！！！(bushi)</btn><br>
+        <s>还是Py大佬</s>
+      </bl>
+    </div>
+    <fixed btn id="share">分享脚本w</fixed>
+  </body>
+</html>
