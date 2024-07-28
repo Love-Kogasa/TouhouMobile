@@ -5,8 +5,12 @@ body {
     padding : 5%;
 }
 
-h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ type="text" ], textarea, [fw] {
+h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ type="text" ], textarea, [fw], tool name, tool info, input[type="file"] {
     display : block;
+}
+
+tool {
+    display : inline-block;
 }
 
 * {
@@ -123,4 +127,31 @@ textarea {
 
 btn:active, [btn]:active {
     background-color : #FAA;
+}
+
+tool {
+    background-color : #FAA;
+    width : 110px;
+    border-radius : 10px;
+    color : #FFF;
+    padding-top: 5px;
+    padding-left : 20px;
+    padding-right : 20px;
+    padding-bottom : 10px;
+}
+
+tool name {
+    font-size : 150%;
+    border-bottom : 1px solid #FFF;
+}
+
+tool info {
+    padding : 7px;
+}
+
+input[type="file"] {
+    background-color : #FAA;
+    border-radius : 10px;
+    color : #FFF;
+    padding : 7px;
 }
