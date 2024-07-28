@@ -154,6 +154,10 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/i3Dcv25pnkub",
             info : "东方角色圣诞节主题头像，提取码thm",
             star : 4
-        }
+        },
+         "Google Play" : {
+            url : "https://www.lanzouh.com/i7K6f25s565c",
+            info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行",
+            star : 4
     }
 }
