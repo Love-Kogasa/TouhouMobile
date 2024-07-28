@@ -90,7 +90,7 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iGoFf25s4sra",
             info : "像素地牢是一个非常经典的地牢游戏，这个是东方版的",
             star : 4
-        {
+         }
     },
     其他 : {
         "踢屁股大赛" : {
