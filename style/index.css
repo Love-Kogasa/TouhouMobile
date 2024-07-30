@@ -15,6 +15,8 @@ tool {
 
 * {
     transition : all 0.5s ease-in-out;
+    text-shadow : 0px 2px 7px #000,
+      0px 3px 10px #000;
 }
 
 top {
@@ -28,9 +30,10 @@ top {
     font-size : 145%;
     box-shadow : 0px 1px 5px #FBB,
       0px 1px 20px #DDD;
+    text-shadow : none;
 }
 
-fixed {
+fixed, [fixed] {
     position : fixed;
     top : 79%; left : 70%;
     background-color : #FCC;
@@ -58,6 +61,11 @@ btn, [btn] {
     padding-right : 10px;
     background-color : #FBB;
     color : #FFF;
+    text-shadow : none;
+}
+
+btn:active, [btn]:active {
+    background-color : #F99;
 }
 
 [pd] {
@@ -78,6 +86,7 @@ tab {
 
 tab name, tab content {
     padding : 2px;
+    text-shadow : none;
 }
 
 tab name {
@@ -96,10 +105,12 @@ tab content:hover {
     padding-left : 5px;
     padding-right : 5px;
     backdrop-filter : blur(2px);
+    text-shadow : none;
 }
 
 tab content {
     display : none;
+    text-shadow : none;
 }
 
 input[ type="text" ], textarea, input[ type="text" ]:focus, textarea:focus {
@@ -111,6 +122,7 @@ input[ type="text" ], textarea, input[ type="text" ]:focus, textarea:focus {
     color : #FFF;
     padding-left : 10px;
     padding-right : 10px;
+    text-shadow : none;
 }
 
 textarea {
@@ -138,15 +150,18 @@ tool {
     padding-left : 20px;
     padding-right : 20px;
     padding-bottom : 10px;
+    text-shadow : none;
 }
 
 tool name {
     font-size : 150%;
     border-bottom : 1px solid #FFF;
+    text-shadow : none;
 }
 
 tool info {
     padding : 7px;
+    text-shadow : none;
 }
 
 input[type="file"] {
@@ -154,4 +169,13 @@ input[type="file"] {
     border-radius : 10px;
     color : #FFF;
     padding : 7px;
+    text-shadow : none;
+}
+
+.none-shadow {
+    text-shadow : none;
+}
+
+.light-shadow {
+    text-shadow : 0px 2px 5px #222;
 }
