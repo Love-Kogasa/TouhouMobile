@@ -137,6 +137,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iuo1l25q7ech",
             info : "上面那个东方幻想乡防卫记的二代，塔防游戏<br>",
             star : 5
+        },
+        "蕾米莉亚kicker" : {
+            url : "https://www.lanzouh.com/iHemX2607qif",
+            info : "通过迫害蕾米赚钱赎回红魔馆及成员的游戏<br>",
+            star : 4
         }
     },
     非 : {
