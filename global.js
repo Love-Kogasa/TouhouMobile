@@ -42,8 +42,13 @@ var touhouMobile = {
         },
         "东方灵寻梦" : {
             url : "https://www.lanzouh.com/iDHGJ260juoh",
-            info : "这个挺不错的，应该是新版本吧<br>提供者未提供描述，<s>我只玩过有bug的旧版本</s>",
+            info : "这个挺不错的，应该是新版本吧<br>提供者未提供描述，<s>我只玩过有bug的旧版本</s><br>",
             star : 4
+        },
+        "东方圣光叶" : {
+            url : "https://www.lanzouh.com/iE0w0260juxg",
+            info : "琪露诺自机，莎莎敌机的同人stg<br>好像只有他俩？没有判定点，但是场景很大<br>总体质量一般<br>",
+            star : 3
         }
     },
     音游 : {
@@ -102,6 +107,13 @@ var touhouMobile = {
             star : 4
          }
     },
+    跑酷 : {
+        "东方梦奔跑" : {
+            url : "https://www.lanzouh.com/iApFp260jsri",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        }
+    },
     其他 : {
         "踢屁股大赛" : {
             url : "https://www.lanzouh.com/iBU4R25t0daf",
@@ -157,7 +169,7 @@ var touhouMobile = {
     暂未分类 : {
         "琪露诺坦克" : {
             url : "https://www.lanzouh.com/i2UP7260jofc",
-            info : "提供者暂未提供描述，请等待更新",
+            info : "提供者暂未提供描述，请等待更新(这个是谷歌游戏，似乎玩不了)",
             star : 0
         },
         "蕾米莉亚掉落" : {
@@ -205,11 +217,6 @@ var touhouMobile = {
             info : "提供者暂未提供描述，请等待更新",
             star : 0
         },
-        "东方梦奔跑" : {
-            url : "https://www.lanzouh.com/iApFp260jsri",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
         "东方RPG" : {
             url : "https://www.lanzouh.com/iKfy7260jube",
             info : "提供者暂未提供描述，请等待更新",
@@ -217,11 +224,6 @@ var touhouMobile = {
         },
         "东方VGS" : {
             url : "https://www.lanzouh.com/ivPuK260juha",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "东方圣光叶" : {
-            url : "https://www.lanzouh.com/iE0w0260juxg",
             info : "提供者暂未提供描述，请等待更新",
             star : 0
         },
