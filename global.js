@@ -48,8 +48,8 @@ var touhouMobile = {
             star : 5
         },
         "东方曲包" : {
-            url : "https://pan.baidu.com/s/1YBXFItj6Tks7HFwg-JbZnw",
-            info : "与上面两个音游配套食用的东方曲曲包，提取码thmm（因为百度网盘必须四位数，所以此文件不再是thm）",
+            url : "https://cloud.wujiyan.cc/s/ewMfr",
+            info : "与上面两个音游配套食用的东方曲曲包",
             star : 4
         }
     },
