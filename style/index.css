@@ -172,7 +172,7 @@ input[type="file"] {
     text-shadow : none;
 }
 
-.none-shadow {
+.swal-text, .swal-content, .swal-title, .swal-button, .swal-content__input, .none-shadow {
     text-shadow : none;
 }
 
