@@ -34,6 +34,16 @@ var touhouMobile = {
             url : "http://m.downcc.com/d/284934",
             info : "类似于上者，也是一个经典风的车万STG手游<br>总体来说还是挺不错的<br>",
             star : 4
+        },
+        "东方有顶天" : {
+            url : "https://www.lanzouh.com/iHtIY260jtkh",
+            info : "一个车万手游STG作，质量还行<br>提供者未提供介绍，我以前也没通关过<br>所以只能说到这些<br>",
+            star : 4
+        },
+        "东方灵寻梦" : {
+            url : "https://www.lanzouh.com/iDHGJ260juoh",
+            info : "这个挺不错的，应该是新版本吧<br>提供者未提供描述，<s>我只玩过有bug的旧版本</s>",
+            star : 4
         }
     },
     音游 : {
@@ -142,6 +152,98 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iHemX2607qif",
             info : "通过迫害蕾米赚钱赎回红魔馆及成员的游戏<br>",
             star : 4
+        }
+    },
+    暂未分类 : {
+        "琪露诺坦克" : {
+            url : "https://www.lanzouh.com/i2UP7260jofc",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "蕾米莉亚掉落" : {
+            url : "https://www.lanzouh.com/iLqx8260jore",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        /*"Satori 的像素地牢" : {
+            url : "https://www.lanzouh.com/iVZvT260jpib",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },这个就是觉地牢*/
+        "suika组合" : {
+            url : "https://www.lanzouh.com/iKUut260jpmf",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方幸存者" : {
+            url : "https://www.lanzouh.com/iVO7a260jq0j",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "TTB" : {
+            url : "https://www.lanzouh.com/iVDuy260jqpe",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "ありすの弾幕修行" : {
+            url : "https://www.lanzouh.com/iFzpR260jrte",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        " ファンシーライブ" : {
+            url : "https://www.lanzouh.com/i9c3k260jsof",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        " レミリアvsパチュリー" : {
+            url : "https://www.lanzouh.com/i9c3k260jsof",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方电池插件" : {
+            url : "https://www.lanzouh.com/iMg3x260jspg",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方梦奔跑" : {
+            url : "https://www.lanzouh.com/iApFp260jsri",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方RPG" : {
+            url : "https://www.lanzouh.com/iKfy7260jube",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方VGS" : {
+            url : "https://www.lanzouh.com/ivPuK260juha",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方圣光叶" : {
+            url : "https://www.lanzouh.com/iE0w0260juxg",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "东方玉灵宫" : {
+            url : "https://www.lanzouh.com/i1UDY260jvod",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "雏酱踢屁股大赛" : {
+            url : "https://www.lanzouh.com/iwSyG260jw4j",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "灵梦无双" : {
+            url : "https://www.lanzouh.com/iZt83260jwni",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+        "未だ知られぬ物語" : {
+            url : "https://www.lanzouh.com/iVOS0260k5aj",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
         }
     },
     非 : {
