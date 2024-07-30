@@ -43,7 +43,7 @@ var touhouMobile = {
             star : 3
         },
         "TouhouMix" : {
-            url : "https://1drv.ms/u/s!AmYepo2o3RhwefVJND48zOMU0Eg?e=Jhr6Jx",
+            url : "https://cloud.wujiyan.cc/s/7vDCl",
             info : "一个相当好的车万音游手游<br>",
             star : 5
         },
@@ -104,8 +104,8 @@ var touhouMobile = {
             star : 5
         },
          "雏酱Breaker 2nd.break" : {
-            url : "https://pan.baidu.com/s/1pWeBWLB_SG-alJ71E93Yag",
-            info : "键山雏横板对战手游，暂无汉化，提取码thmm<br>",
+            url : "https://cloud.wujiyan.cc/s/xMzUk",
+            info : "键山雏横板对战手游，暂无汉化<br>",
             star : 5
         },
          "蕾米莉亚的晚餐(汉化)" : {
