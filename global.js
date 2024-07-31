@@ -49,6 +49,16 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iE0w0260juxg",
             info : "琪露诺自机，莎莎敌机的同人stg<br>好像只有他俩？没有判定点，但是场景很大<br>总体质量一般<br>",
             star : 3
+        },
+        "爱丽丝の弾幕修行" : {
+            url : "https://www.lanzouh.com/iFzpR260jrte",
+            info : "横板stg，操控爱丽丝和人偶攻打红魔乡的角色<br>",
+            star : 4
+        },
+        "东方幸存者" : {
+            url : "https://www.lanzouh.com/iVO7a260jq0j",
+            info : "结合了子弹地狱元素的弹幕肉鸽游戏<br>",
+            star : 5
         }
     },
     音游 : {
@@ -66,8 +76,14 @@ var touhouMobile = {
             url : "https://cloud.wujiyan.cc/s/ewMfr",
             info : "与上面两个音游配套食用的东方曲曲包",
             star : 4
+        },
+        " ファンシーライブ" : {
+            url : "https://www.lanzouh.com/i9c3k260jsof",
+            info : "音游，但目前曲子比较少",
+            star : 5
         }
     },
+     
     回合制 : {
         "东方异想穴" : {
             url : "http://m.downcc.com/d/347952",
@@ -78,6 +94,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/i6CEG25pdm0d",
             info : "3D风回合制游戏，暂无汉化<br>",
             star : 3
+        },
+        "灵梦无双" : {
+            url : "https://www.lanzouh.com/iZt83260jwni",
+            info : "考验反应能力，在出招的瞬间破解<br>",
+            star : 5
         }
     },
     地牢 : {
@@ -112,6 +133,28 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iApFp260jsri",
             info : "提供者暂未提供描述，请等待更新",
             star : 0
+        }
+    },
+    RPG : {
+        "TTB" : {
+            url : "https://www.lanzouh.com/iVDuy260jqpe",
+            info : "和东方rpg同一个作者同一个类型，立绘不错，但非常肝<br>",
+            star : 3
+        },
+         "东方RPG" : {
+            url : "https://www.lanzouh.com/iKfy7260jube",
+            info : "和TTB同一个作者同一个类型，立绘不错，但非常肝<br>",
+            star : 3
+        },
+        "东方VGS" : {
+            url : "https://www.lanzouh.com/ivPuK260juha",
+            info : "提供者暂未提供描述，请等待更新",
+            star : 0
+        },
+         " レミリアvsパチュリー" : {
+            url : "https://www.lanzouh.com/i9c3k260jsof",
+            info : "闯关RPG，非常可爱，但难度偏高<br>",
+            star : 5
         }
     },
     其他 : {
@@ -169,17 +212,29 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/i28oV2637dbi",
             info : "根据要求来猜拳，坚持尽可能久的时间吧！<br>",
             star : 4
-        }
+        },
+        "雏酱踢屁股大赛" : {
+            url : "https://www.lanzouh.com/iwSyG260jw4j",
+            info : "踢屁股大赛系列，和蕾米踢屁股大赛一样的作者，踢得越远越好<br>",
+            star : 5
+        },
+         "蕾米莉亚掉落" : {
+            url : "https://www.lanzouh.com/iLqx8260jore",
+            info : "可爱休闲游戏，点击物品让蕾米莉亚掉到床上<br>",
+            star : 5
+        },
+         "合成大翠香" : {
+            url : "https://www.lanzouh.com/iKUut260jpmf",
+            info : "很可爱的休闲小游戏，把各种角色合成翠香<br>",
+            star : 4
+        },
+
     },
+    
     暂未分类 : {
         "琪露诺坦克" : {
             url : "https://www.lanzouh.com/i2UP7260jofc",
             info : "提供者暂未提供描述，请等待更新(这个是谷歌游戏，似乎玩不了)",
-            star : 0
-        },
-        "蕾米莉亚掉落" : {
-            url : "https://www.lanzouh.com/iLqx8260jore",
-            info : "提供者暂未提供描述，请等待更新",
             star : 0
         },
         /*"Satori 的像素地牢" : {
@@ -187,63 +242,9 @@ var touhouMobile = {
             info : "提供者暂未提供描述，请等待更新",
             star : 0
         },这个就是觉地牢*/
-        "suika组合" : {
-            url : "https://www.lanzouh.com/iKUut260jpmf",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "东方幸存者" : {
-            url : "https://www.lanzouh.com/iVO7a260jq0j",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "TTB" : {
-            url : "https://www.lanzouh.com/iVDuy260jqpe",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "ありすの弾幕修行" : {
-            url : "https://www.lanzouh.com/iFzpR260jrte",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        " ファンシーライブ" : {
-            url : "https://www.lanzouh.com/i9c3k260jsof",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        " レミリアvsパチュリー" : {
-            url : "https://www.lanzouh.com/i9c3k260jsof",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "东方电池插件" : {
-            url : "https://www.lanzouh.com/iMg3x260jspg",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "东方RPG" : {
-            url : "https://www.lanzouh.com/iKfy7260jube",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "东方VGS" : {
-            url : "https://www.lanzouh.com/ivPuK260juha",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
+       
         "东方玉灵宫(破解版)" : {
             url : "https://www.lanzouh.com/i1UDY260jvod",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "雏酱踢屁股大赛" : {
-            url : "https://www.lanzouh.com/iwSyG260jw4j",
-            info : "提供者暂未提供描述，请等待更新",
-            star : 0
-        },
-        "灵梦无双" : {
-            url : "https://www.lanzouh.com/iZt83260jwni",
             info : "提供者暂未提供描述，请等待更新",
             star : 0
         },
@@ -273,6 +274,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/i3Dcv25pnkub",
             info : "东方角色圣诞节主题头像，提取码thm",
             star : 4
+        },
+         "东方电池插件" : {
+            url : "https://www.lanzouh.com/iMg3x260jspg",
+            info : "可以在手机上养东方角色的小部件<br>",
+            star : 5
         },
          "Google Play" : {
             url : "https://www.lanzouh.com/ishnY25szwud",
