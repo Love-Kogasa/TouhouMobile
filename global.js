@@ -227,7 +227,7 @@ var touhouMobile = {
             info : "提供者暂未提供描述，请等待更新",
             star : 0
         },
-        "东方玉灵宫" : {
+        "东方玉灵宫(破解版)" : {
             url : "https://www.lanzouh.com/i1UDY260jvod",
             info : "提供者暂未提供描述，请等待更新",
             star : 0
