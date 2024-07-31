@@ -164,6 +164,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iHemX2607qif",
             info : "通过迫害蕾米赚钱赎回红魔馆及成员的游戏<br>",
             star : 4
+        },
+        "东方猜拳录" : {
+            url : "https://www.lanzouh.com/i28oV2637dbi",
+            info : "根据要求来猜拳，坚持尽可能久的时间吧！<br>",
+            star : 4
         }
     },
     暂未分类 : {
