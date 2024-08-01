@@ -288,6 +288,11 @@ var touhouMobile = {
             info : "可以在手机上养东方角色的小部件<br>",
             star : 5
         },
+        "芙兰朵露倒计时桌面插件" : {
+            url : "https://www.lanzouh.com/ivAls267nm6h",
+            info : "一款芙兰皮肤的c83c84倒计时桌面组件<br>虽然放到现在倒计时功能已经没什么用了<br>但拿来放桌面上欣赏还是蛮不错的（×）<br>",
+            star : 5
+        },
          "Google Play" : {
             url : "https://www.lanzouh.com/ishnY25szwud",
             info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行",
