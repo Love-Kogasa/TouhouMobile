@@ -8,7 +8,7 @@ ele.innerHTML = (function(){
             for( let game of Object.keys( value ) ){
                 ret.push( `
                     <a href="${value[game].url}" class="light-shadow">• ${game}</a>
-                    <br><text class="light-shadow">${value[game].info}<text>` )
+                    <br><text class="none-shadow">${value[game].info}<text>` )
             }
             return ret.join( "<br>" )
         })()
