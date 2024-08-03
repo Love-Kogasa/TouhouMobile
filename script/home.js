@@ -5,7 +5,7 @@ var ele = document.getElementById( "links" ),
     [ "TouhouMobile Pixiv图片获取w", "./pixiv.html" ],
     [ "TouhouMobile API教程w", "./help.html" ],
     [ "TouhouMobile Tools", "./tools/" ],
-    [ "外站 随机车万图片", "javascript:swal('哎呀', '忘记补上链接了awa', 'error' );" ],
+    [ "TouhouMobile Links", "./friends.html" ],
     [ "外站 莉莉云w", "https://cloud.lilywhite.cc/" ]
   ]
 
