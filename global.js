@@ -126,6 +126,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iuaH525szxrg",
             info : "像素地牢是一个非常经典的地牢游戏，这个是东方版的",
             star : 4
+         },
+        "蕾米莉亚vs地下迷宫" : {
+            url : "https://www.lanzouh.com/iFsfB26fd4kb",
+            info : "操控蕾米莉亚在地牢里解密",
+            star : 4
          }
     },
     跑酷 : {
@@ -133,6 +138,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iApFp260jsri",
             info : "提供者暂未提供描述，请等待更新",
             star : 0
+        },
+        "蕾米莉亚vs魅力球" : {
+            url : "https://www.lanzouh.com/iB0Ku26fd60d",
+            info : "蕾米莉亚跑酷收集钻石，但是手感比较差",
+            star : 3
         }
     },
     RPG : {
