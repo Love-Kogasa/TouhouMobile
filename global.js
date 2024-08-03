@@ -220,7 +220,7 @@ var touhouMobile = {
         },
          "蕾米莉亚掉落" : {
             url : "https://www.lanzouh.com/iLqx8260jore",
-            info : "可爱休闲游戏，点击物品让蕾米莉亚掉到床上<br>",
+            info : "可爱休闲游戏，点击物品让蕾米莉亚掉到床上（往下翻翻有二代三代）<br>",
             star : 5
         },
          "合成大翠香" : {
@@ -236,6 +236,16 @@ var touhouMobile = {
         "多多良小伞的惊吓大作战" : {
             url : "https://lever210.itch.io/tatara-kogasas-surprise-operation",
             info : "小游戏，控制小伞吓唬路人以得到糖果<br>",
+            star : 4
+        },
+        "蕾米莉亚掉落2" : {
+            url : "https://www.lanzouh.com/inUz426f74lg",
+            info : "玩法和上面的一代相同<br>",
+            star : 4
+        },
+        "蕾米莉亚掉落3" : {
+            url : "https://www.lanzouh.com/iZ54626f751c",
+            info : "新增角色芙兰，玩法和上面的二代三代相同<br><s>出了三代的游戏一定很热门吧</s><br>",
             star : 4
         }
     },
