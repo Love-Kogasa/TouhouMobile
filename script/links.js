@@ -33,6 +33,12 @@ var list = document.getElementById( "list" ),
       url : "https://bei-ko.github.io/",
       favicon : "https://bei-ko.github.io/img/1.jpg",
       isth : false
+    },
+    {
+      name : "[ 友链 ][ 本站未使用 ] 由 KKStudio 的反向代理服务",
+      url : "https://proxy.xn--imrry7s001seda.us.kg/",
+      favicon : "https://www.runoob.com/wp-content/themes/runoob/assets/img/404.jpg",
+      isth : false
     }
   ]
 function fav( url ){
