@@ -257,6 +257,11 @@ var touhouMobile = {
             url : "https://www.lanzouh.com/iZ54626f751c",
             info : "新增角色芙兰，玩法和上面的二代三代相同<br><s>出了三代的游戏一定很热门吧</s><br>",
             star : 4
+        },
+        "雏酱工厂（汉化）" : {
+            url : "https://www.lanzouh.com/iw8Fw26s8v1c",
+            info : "著名厄雏isy(雏酱)制作的回合制养成游戏,帮助荷取捕获岛上的克隆键山雏<br>",
+            star : 5
         }
     },
     暂未分类 : {
