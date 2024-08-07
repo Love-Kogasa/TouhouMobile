@@ -323,6 +323,11 @@ var touhouMobile = {
             info : "成都学生社团创作的漫画，提供者已征得创作者同意<br>",
             star : 5
         },
+        "TouHou Pet" : {
+            url : "https://www.lanzouh.com/i5FK326sr1lg",
+            info : "东方手机桌宠，支持自定义，附带配置文件<br>",
+            star : 4
+        },
          "Google Play" : {
             url : "https://www.lanzouh.com/ishnY25szwud",
             info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行",
