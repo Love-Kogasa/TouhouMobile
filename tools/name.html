@@ -1,0 +1,37 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <link rel="icon" href="../group.png" />
+    <meta name="description" content="TouhouProject角色名称转换器">
+    <title>TouhouMobile - Name 名称转换器</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <script>function back(){
+      window.location.href = "../index.html"
+    }</script>
+    <script src="../script/tools/name.js"></script>
+  </head>
+  <body onload="main(inp,full)">
+    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - Names</h>
+    <div pd><bl>
+      TouhouMobile 名称转换器w<br>
+      输入角色的 中/日/英 名并将其转换为三语名称
+    </bl></div><br>
+    <h>TouhouMobile - Names</h>
+    <div pd>
+      <bl>
+        <b>输入角色名称 : </b>
+        <input type="text" id="inp" />
+        <tipbox class="" id="full">
+          <name>Loading</name>
+        </tipbox>
+        <ul id="out">
+          None
+        </ul>
+        awa
+      </bl>
+    </div>
+  </body>
+</html>
