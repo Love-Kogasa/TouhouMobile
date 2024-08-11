@@ -1,6 +1,7 @@
 var listele = document.getElementById( "tools" ),
   list = [ 
-    [ "PyOnline", "在线运行你的Python脚本w<br>支持分享哦✓", "./py.html" ]
+    [ "PyOnline", "在线运行你的Python脚本w<br>支持分享哦✓", "./py.html" ],
+    [ "THNames", "查询角色的三语名称( 中 英 日 )", "./name.html" ]
   ]
 listele.innerHTML = (function(){
     var html = ""
