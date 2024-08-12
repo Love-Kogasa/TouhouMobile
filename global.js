@@ -330,7 +330,7 @@ var touhouMobile = {
         },
          "Google Play" : {
             url : "https://www.lanzouh.com/ishnY25szwud",
-            info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行"google play link:https://play.google.com/<br>,
+            info : "谷歌应用市场，非常重要的前置依赖库，部分游戏需要依赖此程序运行google play link:https://play.google.com/<br>",
             star : 5
          }
     }
