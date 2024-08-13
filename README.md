@@ -1,5 +1,5 @@
 # TouhouMobile
-En: https://love-kogasa.github.io/THMobile-Inter/
+En: https://github.com/Love-Kogasa/THMobile-Inter
 ***
 <ul>
 TouhouMobile 简称 THM<br>
