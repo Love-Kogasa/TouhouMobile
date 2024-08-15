@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -11,20 +11,34 @@
     <script src="./script/topele.js"></script>
   </head>
   <body>
-    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
-    <h>TouhouMobile - Pixiv</h>
-    <div pd><bl>
-      这里是基于Pixivcat搭建的Pixiv图片获取器<br>
-      用于获取Pixiv图片w<br>
-      单图 : pid 多图 : pid-p
-    </bl></div><br>
-    <h>TouhouMobile - 获取器</h>
-    <div pd>
-      <span style="font-size: 120%;color : #FCC;">要获取的图片w</span> : <input type="text" style="width : 100%;" id="inp">
-      <btn fw style="width : 94.5%;" id="get">获取</btn>
-      <img src="" title="无图片" id="img" width="99.9%" style="border : none; backdrop-filter: blur( 3px );">
-      <fixed btn><a href="#" style="color : #FFF;" id="d" class="none-shadow">下载图片w</a></fixed>
-      <fixed btn ps id="share">分享图片w</fixed>
+    <div id="head-menu">
+      <a id="head-title" href="javascript:back()">
+        <img src="favicon.png" height="32px"/> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - Pixiv</h2>
+      <div pd>
+        <div class="left-border-line">
+          这里是基于Pixivcat搭建的Pixiv图片获取器<br>
+          用于获取Pixiv图片w<br>
+          单图 : pid 多图 : pid-p
+        </div>
+      </div>
+      <h2>TouhouMobile - 获取器</h2>
+      <div pd>
+        <span style="font-size: 120%">要获取的图片w</span> :
+        <input type="text" style="width: 100%;" id="inp">
+        <button style="width: 100%;" id="get">获取</button>
+        <div id="pixiv-img-box">
+          <img src="" title="无图片" id="img">
+          <div id="pixiv-img-box-menu">
+            <nav>
+              <button id="d">下载</button>
+              <button id="share">分享</button>
+            </nav>
+          </div>
+      </div>
     </div>
     <script src="./script/pixiv.js"></script>
   </body>

@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -11,24 +11,38 @@
     <script src="./script/topele.js"></script>
   </head>
   <body>
-    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
-    <h>TouhouMobile - 安卓应用</h>
-    <div pd><bl>
-      这里是东方Project相关的安卓软件的集合啦<br>
-      点击游戏粉色文字就会直接跳转到下载页了<br>
-      下载页大部分都不是本站，不过这些下载站点试过都可以用<br>
-      有些游戏有内置的广告，应该是下载站加的<br>
-      毕竟不是从官方源下载的w<br>
-      蓝奏云下载提取码没说就是thm<br>
-      <s>刚建站并不是很全啦w</s>
-    </bl></div><br>
-    <h>TouhouMobile - List</h>
-    <div pd id="tabs">
-      <tab>
-        <name>加载中......</name>
-        <content>请稍等</content>
-      </tab>
+    <div id="head-menu">
+      <a id="head-title" href="javascript:back()">
+        <img src="favicon.png" height="32px"/> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - 安卓应用</h2>
+      <div pd>
+        <div class="left-border-line">
+          这里是东方Project相关的安卓软件的集合啦<br>
+          点击游戏粉色文字就会直接跳转到下载页了<br>
+          下载页大部分都不是本站，不过这些下载站点试过都可以用<br>
+          有些游戏有内置的广告，应该是下载站加的<br>
+          毕竟不是从官方源下载的w<br>
+          蓝奏云下载提取码没说就是thm<br>
+          <s>刚建站并不是很全啦w</s>
+        </div>
+      </div>
+      <h2>TouhouMobile - List</h2>
+      <div pd id="game-list">
+        <div class="collapse-area">
+          <div class="heading .no-tap-highlight">
+            <i class="ic-collapse-arrow"></i>
+            <span>Now loading...</span>
+          </div>
+          <div class="collapse-content" style="display: none">
+            少女加载中ing...
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./script/game.js"></script>
+    <script src="./script/collapse.js"></script>
   </body>
 </html>
