@@ -19,7 +19,9 @@ if( $GET !== void 0 && typeof $GET[ "page" ] === "string" ){
           encodeURI( link.value || "javascript:swal( '哎呀', '链接被uuz吃掉啦', 'error' );" )}&btn=${
           encodeURI( btn.value || "前往链接w" )}`
     }
-    url.oncopy = function(){
+    url.oncopy = function(event){
+        event.preventDefault()
+        event.clipboardData.setData('text/plain', url.value); // 手动执行复制行为
         swal( {
           text : "复制成功w",
           icon : "success",

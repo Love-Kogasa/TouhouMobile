@@ -12,7 +12,7 @@ var ele = document.getElementById( "links" ),
 ele.innerHTML = ( function(){
   var values = []
   for( let a of list ){
-    values.push( `<a href="${a[1]}">• ${a[0]}</a>` )
+    values.push( `<li><a href="${a[1]}">${a[0]}</a></li>` )
   }
-  return values.join( "<br>" )
+  return values.join( "" )
 } )( )

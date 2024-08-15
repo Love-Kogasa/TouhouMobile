@@ -47,13 +47,18 @@ function fav( url ){
 list.innerHTML = ( function(){
     var back = []
     urls.forEach( function( value, index ){
-        back.push( "<a href=\"" + value.url + "\">" + (
-            typeof value.favicon === "boolean" ?
-                value.favicon ?
-                    `<img src="${fav(value.url)}" width="27px" height="27px"/> ` : "• "
-                : typeof value.favicon === "string" ?
-                    `<img src="${value.favicon}" width="32px" height="32px"/> ` : "• "
-        ) + ( value.isth ? "[ 东方Project ] " : "") + value.name + "</a>" )
+        back.push( 
+        `
+        <div style="align-items:center;display: flex;height:35px">
+          ${typeof value.favicon === "boolean" ?
+            value.favicon ?
+            `<img src="${fav(value.url)}" width="32px" height="32px"/> ` : "• "
+          : typeof value.favicon === "string" ?
+            `<img src="${value.favicon}" width="32px" height="32px"/> ` : "• "}
+          <a href="${value.url}">${value.isth ? "[ 东方Project ] " : ""}${value.name}</a>
+        </div>
+      ` 
+    )
     } )
-    return back.join( "<br>" )
+    return back.join( "" )
 } )()
