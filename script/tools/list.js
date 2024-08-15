@@ -1,4 +1,4 @@
-var listele = document.getElementById( "tools" ),
+var listele = document.getElementById( "tool-list" ),
   list = [ 
     [ "PyOnline", "在线运行你的Python脚本w<br>支持分享哦✓", "./py.html" ],
     [ "THNames", "查询角色的三语名称( 中 英 日 )", "./name.html" ]
@@ -6,10 +6,12 @@ var listele = document.getElementById( "tools" ),
 listele.innerHTML = (function(){
     var html = ""
     for( let tool of list ){
-        html += `<tool>
-          <name><a href="${tool[2]}" style="color : #FFF;" class="none-shadow">${tool[0]}</a></name>
-          <info>${tool[1]}</info>
-        </tool>`
+        html += `<li id="tool-item">
+          <div id="name">
+            <a href="${tool[2]}" class="none-shadow">${tool[0]}</a>
+          </div>
+          <div id="info">${tool[1]}</div>
+        </li>`
     }
     return html
 })()
