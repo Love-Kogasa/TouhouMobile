@@ -1,82 +1,288 @@
+html {
+    overflow-y: overlay;
+}
+
 body {
     background-image : url( "https://postimage.me/images/2024/08/08/bg.jpg" );
-    background-size : auto 100%;
+    background-size : cover;
     background-position : center;
-    padding : 5%;
+    background-attachment : fixed;
+    background-repeat : no-repeat;
+    padding : 80px 5% 0;
+}
+
+/* 滚动条样式 */
+
+::-webkit-scrollbar {
+    width : 8px;
+    height : 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background : #eee8;
+    border-radius : 4px;
+    box-shadow : inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background : #bbbf;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow : inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius : 10px;
+    background : #fff3;
 }
 
 h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ type="text" ], textarea, [fw], tool name, tool info, input[type="file"] {
     display : block;
 }
 
-tool {
-    display : inline-block;
-}
-
 * {
     transition : all 0.5s ease-in-out;
-    text-shadow : 0px 2px 7px #000,
-      0px 3px 10px #000;
+    /* text-shadow : -1px 2px 3px #000; */
 }
 
-top {
+/* 顶部导航栏 */
+
+#head-menu {
+    z-index: 999;
     position : fixed;
     top : 0; left : 0;
+    height: 48px;
     width : 100%;
     background-color : #FBB;
-    padding : 5px;
     padding-left : 20px;
     padding-right : 20px;
     font-size : 145%;
     box-shadow : 0px 1px 5px #FBB,
       0px 1px 20px #DDD;
-    text-shadow : none;
 }
 
-fixed, [fixed] {
+#head-title {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    color: inherit;
+    text-decoration : none;
+}
+
+#head-title:hover {
+    background-color: #FDD;
+    transition : all 0.15s ease-in-out;
+}
+
+#head-title img {
+    margin-right: 10px; /* 图片和文字之间的间距 */
+}
+
+/* 正文 */
+
+#main-content {
+    background-color: rgba(254, 229, 229, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 20px 20px 40px;
+    border-radius: 6px;
+}
+
+#main-content h2 {
+    border-bottom : 2px solid rgb(239, 107, 107);
+    padding-left : 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#main-content .left-border-line {
+    border-left : 2px solid rgb(239, 107, 107);
+    padding-left : 10px;
+}
+
+#main-content a{
+    text-decoration : none;
+    color: rgb(73, 155, 213);
+    background-image: linear-gradient(rgb(73, 155, 213), rgb(73, 155, 213));
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0 1px;
+    transition: background-size 0.3s ease-in-out;
+}
+
+#main-content a:hover {
+    background-size: 100% 1px;
+}
+#main-content div[align="right"] a:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-size: 0 1px;
+    background-color: #F99;
+}
+
+/* #main-content a:visited {
+    color: rgb(219, 111, 111);
+} */
+
+/* 无序列表标记 */
+#main-content li::marker {
+    color: rgb(239, 107, 107);
+}
+
+/* fixed, [fixed] {
     position : fixed;
     top : 79%; left : 70%;
     background-color : #FCC;
     font-size : 125%;
     box-shadow : 0px 1px 1px #777;
     padding : 10px;
-}
+} */
 
-h {
-    font-size : 200%;
-    border-bottom : 1px solid #ECC;
-    padding-left : 10px;
-    color : #FDD;
-}
-
-bl, [bl] {
-    border-left : 2px solid #EAA;
-    color : #FBB;
-    padding-left : 10px;
-}
-
-btn, [btn] {
-    padding : 2px;
+#main-content button, [btn] {
+    padding : 5px;
     padding-left : 10px;
     padding-right : 10px;
+    margin: 5px;
+    border: none;
     background-color : #FBB;
     color : #FFF;
     text-shadow : none;
 }
 
-btn:active, [btn]:active {
-    background-color : #F99;
+#main-content button:hover, [btn]:hover {
+    background-color: #F99;
+}
+
+.no-tap-highlight {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.collapse-area {
+    background-color: #ffd6d6aa;
+    margin-bottom: 2px;
+    box-shadow : -1px 2px 2px #777;
+    border-radius: 6px;
+    overflow: hidden;
+    transition : all 0.3s ease-in-out;
+}
+
+.collapse-area > .heading {
+    display: flex;
+    align-items: flex-start;
+    background-color: #FBB;
+    position: relative;
+    width: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size : 135%;
+    box-shadow : 0px 1px 1px #777;
+}
+
+.collapse-area > .heading:hover {
+    background-color: #F99A;
+}
+
+.ic-collapse-arrow {
+    margin-right: 5px;
+    color: rgba(255, 101, 101, 0.85);
+    font-weight: bold;
+    font-style: inherit;
+    transform: rotate(0deg);
+    transition : all 0.3s ease-in-out;
+}
+
+.ic-collapse-arrow::after {
+    content: '>';
+}
+
+.collapse-area > .collapse-content {
+    display: none;
+    height: 0px;
+    padding: 0px 15px;
+    overflow: hidden;
+    transition : all 0.3s ease-in-out;
+}
+
+#pixiv-img-box {
+    position:relative;
+    width: auto;
+    height: 200px;
+    max-height: 600px;
+    margin: 5px;
+    padding: 5px;
+    left: 50%;
+    transform: translate(-50% ,0); 
+    background-color: #fffb;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    overflow: hidden;
+    display: block;
+    transition: height 0.3s ease-in-out;
+}
+
+#pixiv-img-box img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% ,-50%); 
+    border: none;
+    backdrop-filter: blur( 3px );
+    visibility: hidden;
+}
+
+#pixiv-img-box-menu {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50% ,-89%); 
+    width: 100%;
+    height: 0px;
+    padding-left: 10px;
+    background-color: rgba(34, 34, 34, 0.65);
+    display: block;
+    overflow: hidden;
+    scrollbar-width: 0;
+    transition: height 0.3s ease-in-out;
+}
+
+#pixiv-img-box-menu > nav {
+    position: relative;
+    float: right;
+    align-content: center;
+    height: 100%;
+    margin-right: 30px;
+}
+
+#pixiv-img-box-menu > nav > button {
+    background-color: rgba(34, 34, 34, 0.155);
+    height: 100%;
+    padding: 0px 15px;
+    margin: 0px;
+}
+
+#pixiv-img-box-menu > nav > button:hover {
+    background-color: rgba(34, 34, 34, 0.50);
 }
 
 [pd] {
     padding : 6px;
-    padding-left : 15px;
-    padding-right : 15px;
+    margin-left : 15px;
+    margin-right : 15px;
 }
 
-a, a[href] {
-    text-decoration : none;
-    color : #FBB;
+#copy-api-addr {
+    position : fixed;
+    top : 84%; left : 70%;
+    background-color : #FCC;
+    font-size : 115%;
+    box-shadow : 0px 1px 1px #777;
+    padding : 10px;
+}
+
+#share {
+    position: relative;
+    float: right;
 }
 
 tab {
@@ -117,20 +323,36 @@ tab content {
     text-shadow : none;
 }
 
-input[ type="text" ], textarea, input[ type="text" ]:focus, textarea:focus {
-    width : 70%;
-    border : none;
+input, textarea {
+    width : 100%;
+    margin: 5px;
+    border : 1px solid #adadad;
     outline : none;
-    background-color : rgba( 244, 127, 127, 0.1 );
+    box-sizing: border-box;
+    background-color : rgba(255, 238, 238, 0.438);
     backdrop-filter : blur(3px);
-    color : #FFF;
     padding-left : 10px;
     padding-right : 10px;
-    text-shadow : none;
+}
+
+input {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+input:focus {
+    background-color : rgba(231, 216, 216, 0.438);
 }
 
 textarea {
-    height : 10%;
+    font-size: 115%;
+    min-height: 125px;
+    transition: none;
+    resize: vertical;
+}
+
+textarea:focus {
+    background-color : rgba(231, 216, 216, 0.438);
 }
 
 [fw] {
@@ -145,32 +367,49 @@ btn:active, [btn]:active {
     background-color : #FAA;
 }
 
-tool {
+#tool-list {
+    display : inline-block;
+    margin-left: 10px;
+    padding: 0;
+}
+#tool-list li::marker {
+    content: "";
+}
+
+#tool-item {
+    display: inline-block;
     background-color : #FAA;
     width : 110px;
     border-radius : 10px;
     color : #FFF;
-    padding-top: 5px;
-    padding-left : 20px;
-    padding-right : 20px;
-    padding-bottom : 10px;
-    text-shadow : none;
+    vertical-align: top;
+    padding: 10px 20px;
+    margin: 5px;
 }
 
-tool name {
-    font-size : 150%;
+#tool-item #name {
+    font-size : 125%;
     border-bottom : 1px solid #FFF;
-    text-shadow : none;
+    padding-bottom: 5px;
 }
 
-tool info {
-    padding : 7px;
-    text-shadow : none;
+#tool-item #info {
+    padding: 7px 0px;
+}
+
+#tool-item a {
+    color: #FFF;
+}
+
+#tool-item a:hover {
+    transition: color 0.3s ease-in-out;
+    background-size: 0 1px;
+    color: rgb(103, 165, 216);
 }
 
 input[type="file"] {
     background-color : #FAA;
-    border-radius : 10px;
+    border-radius : 6px;
     color : #FFF;
     padding : 7px;
     text-shadow : none;
@@ -189,12 +428,14 @@ input[type="file"] {
 }
 
 tipbox {
-    max-height : 20%;
+    max-height : 40%;
     width : 40%;
 }
 
 tipbox name {
     display : block;
+    padding: 5px;
+    align-content: center;
     padding-left : 10px;
     border-bottom : 1px solid #FFF;
 }
