@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -13,44 +13,49 @@
     <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
     <script src="../script/param.js"></script>
     <script src="../script/tools/runpy.js"></script>
-    <script>function back(){
-      window.location.href = "../index.html"
-    }</script>
   </head>
-  <body onload="main( [ file, sub, inp, log, share ] )">
-    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile</top><br>
-    <h>TouhouMobile - Pyonline</h>
-    <div pd><bl>
+<body onload="main( [ file, sub, inp, log, share ] )">
+  <div id="head-menu">
+    <a id="head-title" href="../index.html">
+      <img src="/favicon.png" height="32px" /> - Touhou Mobile
+    </a>
+  </div>
+  <div id="main-content">
+    <h2>TouhouMobile - Pyonline</h2>
+    <div pd>
       TouhouMobile PyOnline<br>
       在浏览器上编写执行并分享你的脚本awa<br>
       支持input方法<br>
       增加download方法，提供下载功能<br>
       详见download.js
-    </bl></div><br>
-    <h>TouhouMobile - Console</h>
+    </div>
+    <h2>TouhouMobile - Console</h2>
     <div pd>
       <pre id="log" style="
-        background-color : #222;
-        border-left : 4px solid #EEE;
-        padding : 2%;
-        width : 92%;
-        color : #FFF;
-        min-height : 400px;
-        overflow-x: scroll;
-      " class="none-shadow">Py执行前需要等待一段时间用来加载文件<br>时间不会很长，大部分地区不需要VPN<br></pre>
+          background-color : #222;
+          border-radius: 3px;
+          padding : 2%;
+          width : 92%;
+          color : #FFF;
+          min-height : 400px;
+          overflow-x: scroll;
+        " class="none-shadow">
+Py执行前需要等待一段时间用来加载文件
+时间不会很长，大部分地区不需要VPN
+      </pre>
     </div>
-    <h>TouhouMobile - 编写脚本</h>
+    <h2>TouhouMobile - 编写脚本</h2>
     <div pd>
-      <bl>
-        选择Py文件 :
-        <input type="file" id="file"><br>
-        或编写Py脚本
-        <textarea id="inp" style="width : 85%;">print("hello")</textarea>
-        <br>
-        <btn id="sub">启动！！！(bushi)</btn><br>
-        <s>还是Py大佬</s>
-      </bl>
+      选择Py文件 :
+      <input type="file" id="file"><br>
+      或编写Py脚本
+      <textarea id="inp" style="width : 85%;">print("hello")</textarea>
+      <br>
+      <button id="sub">启动！！！(bushi)</button><br>
+      <s>还是Py大佬</s>
+      <button id="share" align="right">分享脚本w</button>
     </div>
-    <fixed btn id="share">分享脚本w</fixed>
-  </body>
+  </div>
+</body>
+
 </html>

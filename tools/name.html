@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,31 +7,36 @@
     <meta name="description" content="TouhouProject角色名称转换器">
     <title>TouhouMobile - Name 名称转换器</title>
     <link rel="stylesheet" href="../style/index.css">
-    <script>function back(){
-      window.location.href = "../index.html"
-    }</script>
     <script src="../script/tools/name.js"></script>
   </head>
   <body onload="main(inp,full)">
-    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile</top><br>
-    <h>TouhouMobile - Names</h>
-    <div pd><bl>
-      TouhouMobile 名称转换器w<br>
-      输入角色的 中/日/英 名并将其转换为三语名称
-    </bl></div><br>
-    <h>TouhouMobile - Names</h>
-    <div pd>
-      <bl>
-        <b>输入角色名称 : </b>
-        <input type="text" id="inp" />
-        <tipbox class="" id="full">
-          <name>Loading</name>
-        </tipbox>
-        <ul id="out">
-          None
-        </ul>
-        awa
-      </bl>
+    <div id="head-menu">
+      <a id="head-title" href="../index.html">
+        <img src="/favicon.png" height="32px" /> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - Names</h2>
+      <div pd>
+        <div class="left-border-line">
+          TouhouMobile 名称转换器w<br>
+          输入角色的 中/日/英 名并将其转换为三语名称
+        </div>
+      </div>
+      <h2>TouhouMobile - Names</h2>
+      <div pd>
+        <div class="left-border-line">
+          <b>输入角色名称 : </b>
+          <input type="text" id="inp" />
+          <tipbox class="" id="full">
+            <div id="name">Loading</div>
+          </tipbox>
+          <ul id="out">
+            None
+          </ul>
+          awa
+        </div>
+      </div>
     </div>
   </body>
 </html>

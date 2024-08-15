@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,24 +7,29 @@
     <title>TouhouMobile - Tools 工具箱</title>
     <link rel="stylesheet" href="../style/index.css">
     <link rel="icon" href="../favicon.png" />
-    <script>function back(){
-      window.location.href = "../index.html"
-    }</script>
   </head>
   <body>
-    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile</top><br>
-    <h>TouhouMobile - Tools</h>
-    <div pd><bl>
-      TouhouMobile 工具箱w<br>
-      可以看看有没有你需要的工具awa
-    </bl></div><br>
-    <h>TouhouMobile - ToolList</h>
-    <ul id="tools">
-      <tool>
-        <name>Wait</name>
-        <info>Loading...</info>
-      </tool>
-    </ul>
+    <div id="head-menu">
+      <a id="head-title" href="../index.html">
+        <img src="/favicon.png" height="32px" /> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - Tools</h2>
+      <div pd>
+        <div class="left-border-line">
+          TouhouMobile 工具箱w<br>
+          可以看看有没有你需要的工具awa
+        </div>
+      </div>
+      <h2>TouhouMobile - ToolList</h2>
+      <ul id="tool-list">
+        <li id="tool-item">
+          <div id="name">Wait</div>
+          <div id="info">Loading...</div>
+        </li>
+      </ul>
+    </div>
     <script src="../script/tools/list.js"></script>
   </body>
 </html>
