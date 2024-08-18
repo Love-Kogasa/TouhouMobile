@@ -48,23 +48,36 @@
       </div>
     </div>
     <script src="./script/home.js"></script>
-    <script>
+    <script type="module">
+      import { loadOml2d } from "./module/live2d.js"
       navigator.language == "zh-CN" || swal( "Hello", "This webpage is in Chinese. If you are not a native Chinese speaker, please visit thm.us.kg", "error" )
       window.location.href.indexOf("thmobile.xyz")+1 || swal("提示", "建议使用 thmobile.xyz 进入THM\n更快，无需魔法", "https://postimage.me/images/2024/08/08/kogasa.gif")
-      if (sessionStorage.getItem("hasVisited")) {
-      } else {
-        sessionStorage.setItem("hasVisited", true)
-        swal({
-          title: "咱好恨啊 ~",
-          icon: "https://postimage.me/images/2024/08/08/kogasa.gif",
-          text: `重要通知:近期接到举报，大量新生被诈骗网站https://toho-vote.info坑骗AwA
-            如果误入请不要慌张，在人物投票界面给 • 多多良小伞 • 投一票即可安全退出，请各位增强网络安全意识，避免上当受骗
-            ( 点击空白处关闭 )`,
-          button: "现在就去AwA"
-        }).then((isGo) => {
-          isGo && (window.location.href = "https://toho-vote.info")
-        })
-      }
+      loadOml2d({
+        mobileDisplay : true,
+        dockedPosition : "left",
+        tips : {
+          copyTips : "Funky 6w9",
+          welcomeTips : "Baka!!!",
+          message : {
+            afternoon : "中午好( 6w9 )",
+            daybreak : "新的一天又要开始了( ⑨O⑨ )",
+            dusk : "Baka！( uwu )",
+            morning : "=O= Funky!",
+            night : "Baka！( uwu )",
+            noon : "⑨刚才正在冻青蛙",
+            lateNight : "困死啦 ( 6w9 )",
+            weeHour : "困死啦 ( 6w9 )"
+          }
+        },
+        models : [
+          {
+            name : "Cirno",
+            path : "https://cdn.jsdelivr.net/npm/live2d-widget-model-cirno@0.0.2/assets/1.model.json",
+            mobileScale : 0.2,
+            scale : 0.2
+          }
+        ]
+      })
     </script>
   </body>
 </html>
