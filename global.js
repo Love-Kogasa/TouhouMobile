@@ -74,7 +74,7 @@ var touhouMobile = {
         },
         "东方曲包" : {
             url : "https://cloud.wujiyan.cc/s/ewMfr",
-            info : "与上面两个音游配套食用的东方曲曲包",
+            info : "上面TouhouMix的曲包",
             star : 4
         },
         " ファンシーライブ" : {
