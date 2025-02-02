@@ -50,7 +50,7 @@
     <script src="./script/home.js"></script>
     <script type="module">
       import { loadOml2d } from "./module/live2d.js"
-      navigator.language == "zh-CN" || swal( "Hello", "This webpage is in Chinese. If you are not a native Chinese speaker, please visit thm.us.kg", "error" )
+      navigator.language.toLowerCase().includes( "zh" ) || swal( "Hello", "This webpage is in Chinese. If you are not a native Chinese speaker, please visit thm.us.kg", "error" )
       window.location.href.indexOf("thmobile.xyz")+1 || swal("提示", "建议使用 thmobile.xyz 进入THM\n更快，无需魔法", "https://postimage.me/images/2024/08/08/kogasa.gif")
       loadOml2d({
         mobileDisplay : true,
