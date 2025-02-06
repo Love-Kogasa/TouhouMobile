@@ -72,9 +72,14 @@ var touhouMobile = {
             info : "一个相当好的车万音游手游<br>",
             star : 5
         },
-        "东方曲包" : {
+        "TouhouMix曲包" : {
+            url : "https://agaaega-my.sharepoint.com/personal/office0010_agaaega_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Foffice0010%5Fagaaega%5Fonmicrosoft%5Fcom%2FDocuments%2FTHMIX%2FPublic%20Resource&ga=1",
+            info : "曲包+教程+附简中文字说明",
+            star : 4
+        },
+        "东方弹幕神乐曲包" : {
             url : "https://cloud.wujiyan.cc/s/ewMfr",
-            info : "上面TouhouMix的曲包",
+            info : "东方弹幕神乐的曲包",
             star : 4
         },
         " ファンシーライブ" : {
