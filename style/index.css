@@ -3,43 +3,56 @@ html {
 }
 
 body {
-    background-image : url( "https://postimage.me/images/2024/08/08/bg.jpg" );
-    background-size : cover;
-    background-position : center;
-    background-attachment : fixed;
-    background-repeat : no-repeat;
-    padding : 80px 5% 0;
+    background-image: url("https://postimage.me/images/2024/08/08/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 80px 5% 0;
 }
 
 /* 滚动条样式 */
 
 ::-webkit-scrollbar {
-    width : 8px;
-    height : 8px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background : #eee8;
-    border-radius : 4px;
-    box-shadow : inset 0 0 5px rgba(0, 0, 0, .2);
+    background: #eee8;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background : #bbbf;
+    background: #bbbf;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow : inset 0 0 5px rgba(0, 0, 0, .2);
-    border-radius : 10px;
-    background : #fff3;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    background: #fff3;
 }
 
-h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ type="text" ], textarea, [fw], tool name, tool info, input[type="file"] {
-    display : block;
+h,
+top,
+bl,
+[bl],
+tab,
+tab name,
+tab:hover content,
+tab content:hover,
+input[ type="text"],
+textarea,
+[fw],
+tool name,
+tool info,
+input[type="file"] {
+    display: block;
 }
 
 * {
-    transition : all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     /* text-shadow : -1px 2px 3px #000; */
 }
 
@@ -47,16 +60,17 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
 
 #head-menu {
     z-index: 999;
-    position : fixed;
-    top : 0; left : 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 48px;
-    width : 100%;
-    background-color : #FBB;
-    padding-left : 20px;
-    padding-right : 20px;
-    font-size : 145%;
-    box-shadow : 0px 1px 5px #FBB,
-      0px 1px 20px #DDD;
+    width: 100%;
+    background-color: #FBB;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 145%;
+    box-shadow: 0px 1px 5px #FBB,
+        0px 1px 20px #DDD;
 }
 
 #head-title {
@@ -66,16 +80,17 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     align-items: center;
     padding: 0 8px;
     color: inherit;
-    text-decoration : none;
+    text-decoration: none;
 }
 
 #head-title:hover {
     background-color: #FDD;
-    transition : all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 #head-title img {
-    margin-right: 10px; /* 图片和文字之间的间距 */
+    margin-right: 10px;
+    /* 图片和文字之间的间距 */
 }
 
 /* 正文 */
@@ -85,22 +100,47 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     backdrop-filter: blur(6px);
     padding: 20px 20px 40px;
     border-radius: 6px;
+    animation: opacityToClear 0.3s ease-out;
 }
 
 #main-content h2 {
-    border-bottom : 2px solid rgb(239, 107, 107);
-    padding-left : 10px;
+    border-bottom: 2px solid rgb(239, 107, 107);
+    padding-left: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    animation: blurToClear 0.1s ease-out;
 }
 
 #main-content .left-border-line {
-    border-left : 2px solid rgb(239, 107, 107);
-    padding-left : 10px;
+    border-left: 2px solid rgb(239, 107, 107);
+    padding-left: 10px;
+    animation: blurToClear 0.2s ease-out;
 }
 
-#main-content a{
-    text-decoration : none;
+@keyframes opacityToClear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blurToClear {
+    from {
+        filter: blur(1px);
+        opacity: 0.3;
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+#main-content a {
+    text-decoration: none;
     color: rgb(73, 155, 213);
     background-image: linear-gradient(rgb(73, 155, 213), rgb(73, 155, 213));
     background-repeat: no-repeat;
@@ -112,6 +152,7 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
 #main-content a:hover {
     background-size: 100% 1px;
 }
+
 #main-content div[align="right"] a:hover {
     transition: background-color 0.3s ease-in-out;
     background-size: 0 1px;
@@ -136,18 +177,20 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     padding : 10px;
 } */
 
-#main-content button, [btn] {
-    padding : 5px;
-    padding-left : 10px;
-    padding-right : 10px;
+#main-content button,
+[btn] {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 5px;
     border: none;
-    background-color : #FBB;
-    color : #FFF;
-    text-shadow : none;
+    background-color: #FBB;
+    color: #FFF;
+    text-shadow: none;
 }
 
-#main-content button:hover, [btn]:hover {
+#main-content button:hover,
+[btn]:hover {
     background-color: #F99;
 }
 
@@ -158,13 +201,13 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
 .collapse-area {
     background-color: #ffd6d6aa;
     margin-bottom: 2px;
-    box-shadow : -1px 2px 2px #777;
+    box-shadow: -1px 2px 2px #777;
     border-radius: 6px;
     overflow: hidden;
-    transition : all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.collapse-area > .heading {
+.collapse-area>.heading {
     display: flex;
     align-items: flex-start;
     background-color: #FBB;
@@ -172,11 +215,11 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     width: auto;
     padding: 5px 10px;
     cursor: pointer;
-    font-size : 135%;
-    box-shadow : 0px 1px 1px #777;
+    font-size: 135%;
+    box-shadow: 0px 1px 1px #777;
 }
 
-.collapse-area > .heading:hover {
+.collapse-area>.heading:hover {
     background-color: #F99A;
 }
 
@@ -186,30 +229,30 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     font-weight: bold;
     font-style: inherit;
     transform: rotate(0deg);
-    transition : all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .ic-collapse-arrow::after {
     content: '>';
 }
 
-.collapse-area > .collapse-content {
+.collapse-area>.collapse-content {
     display: none;
     height: 0px;
     padding: 0px 15px;
     overflow: hidden;
-    transition : all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #pixiv-img-box {
-    position:relative;
+    position: relative;
     width: auto;
     height: 200px;
     max-height: 600px;
     margin: 5px;
     padding: 5px;
     left: 50%;
-    transform: translate(-50% ,0); 
+    transform: translate(-50%, 0);
     background-color: #fffb;
     border: 1px solid #DDD;
     border-radius: 6px;
@@ -224,10 +267,10 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     object-fit: contain;
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50% ,-50%); 
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
-    backdrop-filter: blur( 3px );
+    backdrop-filter: blur(3px);
     visibility: hidden;
 }
 
@@ -235,7 +278,7 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     position: relative;
     top: 100%;
     left: 50%;
-    transform: translate(-50% ,-89%); 
+    transform: translate(-50%, -89%);
     width: 100%;
     height: 0px;
     padding-left: 10px;
@@ -246,7 +289,7 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     transition: height 0.3s ease-in-out;
 }
 
-#pixiv-img-box-menu > nav {
+#pixiv-img-box-menu>nav {
     position: relative;
     float: right;
     align-content: center;
@@ -254,30 +297,31 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
     margin-right: 30px;
 }
 
-#pixiv-img-box-menu > nav > button {
+#pixiv-img-box-menu>nav>button {
     background-color: rgba(34, 34, 34, 0.155);
     height: 100%;
     padding: 0px 15px;
     margin: 0px;
 }
 
-#pixiv-img-box-menu > nav > button:hover {
+#pixiv-img-box-menu>nav>button:hover {
     background-color: rgba(34, 34, 34, 0.50);
 }
 
 [pd] {
-    padding : 6px;
-    margin-left : 15px;
-    margin-right : 15px;
+    padding: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #copy-api-addr {
-    position : fixed;
-    top : 84%; left : 70%;
-    background-color : #FCC;
-    font-size : 115%;
-    box-shadow : 0px 1px 1px #777;
-    padding : 10px;
+    position: fixed;
+    top: 84%;
+    left: 70%;
+    background-color: #FCC;
+    font-size: 115%;
+    box-shadow: 0px 1px 1px #777;
+    padding: 10px;
 }
 
 #share {
@@ -286,53 +330,56 @@ h, top, bl, [bl], tab, tab name, tab:hover content, tab content:hover, input[ ty
 }
 
 tab {
-    width : 100%;
+    width: 100%;
     /*background-color : #A44;*/
 }
 
-tab name, tab content {
-    padding : 2px;
-    text-shadow : none;
+tab name,
+tab content {
+    padding: 2px;
+    text-shadow: none;
 }
 
 tab name {
-    background-color : #FBB;
-    font-size : 140%;
-    padding-left : 10px;
-    padding-right : 10px;
-    width : 94.5%;
-    border-bottom : 3px solid #FAA;
+    background-color: #FBB;
+    font-size: 140%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 94.5%;
+    border-bottom: 3px solid #FAA;
 }
 
 tab:hover content,
-tab content:hover, tipbox {
-    background-color : rgba( 244, 127, 127, 0.1 );
-    padding-left : 5px;
-    padding-right : 5px;
-    backdrop-filter : blur(3px);
-    text-shadow : none;
-    position : absolute;
-    max-height : 50%;
-    z-index : 2;
-    overflow-y : auto;
-    width : 78%;
+tab content:hover,
+tipbox {
+    background-color: rgba(244, 127, 127, 0.1);
+    padding-left: 5px;
+    padding-right: 5px;
+    backdrop-filter: blur(3px);
+    text-shadow: none;
+    position: absolute;
+    max-height: 50%;
+    z-index: 2;
+    overflow-y: auto;
+    width: 78%;
 }
 
 tab content {
-    display : none;
-    text-shadow : none;
+    display: none;
+    text-shadow: none;
 }
 
-input, textarea {
-    width : 100%;
+input,
+textarea {
+    width: 100%;
     margin: 5px;
-    border : 1px solid #adadad;
-    outline : none;
+    border: 1px solid #adadad;
+    outline: none;
     box-sizing: border-box;
-    background-color : rgba(255, 238, 238, 0.438);
-    backdrop-filter : blur(3px);
-    padding-left : 10px;
-    padding-right : 10px;
+    background-color: rgba(255, 238, 238, 0.438);
+    backdrop-filter: blur(3px);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 input {
@@ -341,7 +388,7 @@ input {
 }
 
 input:focus {
-    background-color : rgba(231, 216, 216, 0.438);
+    background-color: rgba(231, 216, 216, 0.438);
 }
 
 textarea {
@@ -352,44 +399,46 @@ textarea {
 }
 
 textarea:focus {
-    background-color : rgba(231, 216, 216, 0.438);
+    background-color: rgba(231, 216, 216, 0.438);
 }
 
 [fw] {
-    width : 100%;
+    width: 100%;
 }
 
 [ps] {
-    top : 83%;
+    top: 83%;
 }
 
-btn:active, [btn]:active {
-    background-color : #FAA;
+btn:active,
+[btn]:active {
+    background-color: #FAA;
 }
 
 #tool-list {
-    display : inline-block;
+    display: inline-block;
     margin-left: 10px;
     padding: 0;
 }
+
 #tool-list li::marker {
     content: "";
 }
 
 #tool-item {
     display: inline-block;
-    background-color : #FAA;
-    width : 110px;
-    border-radius : 10px;
-    color : #FFF;
+    background-color: #FAA;
+    width: 110px;
+    border-radius: 10px;
+    color: #FFF;
     vertical-align: top;
     padding: 10px 20px;
     margin: 5px;
 }
 
 #tool-item #name {
-    font-size : 125%;
-    border-bottom : 1px solid #FFF;
+    font-size: 125%;
+    border-bottom: 1px solid #FFF;
     padding-bottom: 5px;
 }
 
@@ -408,34 +457,82 @@ btn:active, [btn]:active {
 }
 
 input[type="file"] {
-    background-color : #FAA;
-    border-radius : 6px;
-    color : #FFF;
-    padding : 7px;
-    text-shadow : none;
+    background-color: #FAA;
+    border-radius: 6px;
+    color: #FFF;
+    padding: 7px;
+    text-shadow: none;
 }
 
-.swal-text, .swal-content, .swal-title, .swal-button, .swal-content__input, .none-shadow {
-    text-shadow : none;
+.swal-text,
+.swal-content,
+.swal-title,
+.swal-button,
+.swal-content__input,
+.none-shadow {
+    text-shadow: none;
 }
 
 .light-shadow {
-    text-shadow : 0px 2px 5px #222;
+    text-shadow: 0px 2px 5px #222;
 }
 
 .hide {
-    display : none;
+    display: none;
 }
 
 tipbox {
-    max-height : 40%;
-    width : 40%;
+    max-height: 40%;
+    width: 40%;
 }
 
 tipbox name {
-    display : block;
+    display: block;
     padding: 5px;
     align-content: center;
-    padding-left : 10px;
-    border-bottom : 1px solid #FFF;
+    padding-left: 10px;
+    border-bottom: 1px solid #FFF;
+}
+
+#links li {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#links li.fade-in {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.loading {
+    opacity: 0;
+}
+
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #FBB;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
