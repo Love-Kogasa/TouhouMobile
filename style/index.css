@@ -1,277 +1,262 @@
+/* -------- 设计令牌 / Design Tokens -------------------- */
+:root {
+    /* Color */
+    --c-primary: #FBB;
+    --c-primary-hov: #F99;
+    --c-border: rgb(239, 107, 107);
+    --c-link: rgb(73, 155, 213);
+    --c-card: rgba(254, 229, 229, .8);
+    /* Gap & Radius */
+    --sp-xs: .25rem;
+    --sp-sm: .5rem;
+    --sp-md: 1rem;
+    --radius: .375rem;
+}
+
+/* -------- Reset / Global ------------------------------ */
 html {
-    overflow-y: overlay;
+    overflow-y: overlay
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    transition: .4s ease
 }
 
 body {
-    background-image: url("https://postimage.me/images/2024/08/08/bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     padding: 80px 5% 0;
+    background: url(https://postimage.me/images/2024/08/08/bg.jpg) center/cover fixed no-repeat;
 }
 
-/* 滚动条样式 */
+:is(h, top, bl, [bl], tab, tab name, tab content, [fw], tool name, tool info,
+    input[type=text], textarea, input[type=file]) {
+    display: block
+}
 
+/* -------- Scrollbar (Chromium) ------------------------ */
 ::-webkit-scrollbar {
     width: 8px;
-    height: 8px;
+    height: 8px
 }
 
 ::-webkit-scrollbar-thumb {
     background: #eee8;
     border-radius: 4px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 0 5px #0003
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #bbbf;
+    background: #bbbf
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
-    border-radius: 10px;
     background: #fff3;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #0003
 }
 
-h,
-top,
-bl,
-[bl],
-tab,
-tab name,
-tab:hover content,
-tab content:hover,
-input[ type="text"],
-textarea,
-[fw],
-tool name,
-tool info,
-input[type="file"] {
-    display: block;
-}
-
-* {
-    transition: all 0.5s ease-in-out;
-    /* text-shadow : -1px 2px 3px #000; */
-}
-
-/* 顶部导航栏 */
-
+/* =======================================================
+ *  LAYOUT
+ * ===================================================== */
+/* Header */
 #head-menu {
-    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
-    height: 48px;
     width: 100%;
-    background-color: #FBB;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 145%;
-    box-shadow: 0px 1px 5px #FBB,
-        0px 1px 20px #DDD;
+    height: 48px;
+    padding-inline: 20px;
+    background: var(--c-primary);
+    font-size: 1.45rem;
+    z-index: 999;
+    box-shadow: 0 1px 5px var(--c-primary), 0 1px 20px #DDD;
 }
 
 #head-title {
-    height: 100%;
-    width: fit-content;
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    gap: .625rem;
+    height: 100%;
+    padding-inline: .5rem;
     color: inherit;
-    text-decoration: none;
+    text-decoration: none
 }
 
 #head-title:hover {
-    background-color: #FDD;
-    transition: all 0.15s ease-in-out;
+    background: #FDD;
+    transition: .15s
 }
 
 #head-title img {
-    margin-right: 10px;
-    /* 图片和文字之间的间距 */
+    margin-right: 10px
 }
 
-/* 正文 */
-
+/* Main card */
 #main-content {
-    background-color: rgba(254, 229, 229, 0.8);
-    backdrop-filter: blur(6px);
+    margin-top: var(--sp-md);
     padding: 20px 20px 40px;
-    border-radius: 6px;
-    animation: opacityToClear 0.3s ease-out;
+    background: var(--c-card);
+    backdrop-filter: blur(6px);
+    border-radius: var(--radius);
+    animation: fade-in .3s
 }
 
 #main-content h2 {
-    border-bottom: 2px solid rgb(239, 107, 107);
-    padding-left: 10px;
-    padding-bottom: 10px;
     margin-bottom: 10px;
-    animation: blurToClear 0.1s ease-out;
+    padding: 0 0 10px 10px;
+    border-bottom: 2px solid var(--c-border)
 }
 
 #main-content .left-border-line {
-    border-left: 2px solid rgb(239, 107, 107);
     padding-left: 10px;
-    animation: blurToClear 0.2s ease-out;
+    border-left: 2px solid var(--c-border)
 }
 
-@keyframes opacityToClear {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes blurToClear {
-    from {
-        filter: blur(1px);
-        opacity: 0.3;
-    }
-
-    to {
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-
+/* =======================================================
+ *  ELEMENTS
+ * ===================================================== */
+/* Link  ------------------------------------------------- */
 #main-content a {
+    color: var(--c-link);
     text-decoration: none;
-    color: rgb(73, 155, 213);
-    background-image: linear-gradient(rgb(73, 155, 213), rgb(73, 155, 213));
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 0 1px;
-    transition: background-size 0.3s ease-in-out;
+    background: linear-gradient(var(--c-link), var(--c-link)) bottom left/0 1px no-repeat;
+    transition: background-size .25s
 }
 
 #main-content a:hover {
-    background-size: 100% 1px;
+    background-size: 100% 1px
 }
 
-#main-content div[align="right"] a:hover {
-    transition: background-color 0.3s ease-in-out;
-    background-size: 0 1px;
-    background-color: #F99;
+#main-content div[align=right] a:hover {
+    background: var(--c-primary-hov);
+    background-size: 0 1px
 }
 
-/* #main-content a:visited {
-    color: rgb(219, 111, 111);
-} */
-
-/* 无序列表标记 */
+/* Lists */
 #main-content li::marker {
-    color: rgb(239, 107, 107);
+    color: var(--c-border)
 }
 
-/* fixed, [fixed] {
-    position : fixed;
-    top : 79%; left : 70%;
-    background-color : #FCC;
-    font-size : 125%;
-    box-shadow : 0px 1px 1px #777;
-    padding : 10px;
-} */
-
-#main-content button,
-[btn] {
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 5px;
-    border: none;
-    background-color: #FBB;
+/* Button / pseudo-attr btn ----------------------------- */
+:is(#main-content button, [btn]) {
+    margin: var(--sp-sm);
+    padding: .3125rem .625rem;
+    border: 0;
+    border-radius: var(--radius);
     color: #FFF;
-    text-shadow: none;
+    background: var(--c-primary)
 }
 
-#main-content button:hover,
-[btn]:hover {
-    background-color: #F99;
+:is(#main-content button, [btn]):hover {
+    background: var(--c-primary-hov)
 }
 
-.no-tap-highlight {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+:is(btn, [btn]):active {
+    background: #FAA
 }
 
+/* Inputs ---------------------------------------------- */
+input,
+textarea {
+    width: 100%;
+    margin: var(--sp-sm) 0;
+    padding: .375rem .625rem;
+    border: 1px solid #adadad;
+    background: rgba(255, 238, 238, .44);
+    backdrop-filter: blur(3px)
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(231, 216, 216, .44);
+    outline: none
+}
+
+textarea {
+    min-height: 125px;
+    font-size: 1.15rem;
+    resize: vertical;
+    transition: none
+}
+
+input[type=file] {
+    background: var(--c-primary);
+    color: #FFF;
+    border-radius: var(--radius)
+}
+
+/* =======================================================
+ *  COMPONENTS
+ * ===================================================== */
+/* Collapse -------------------------------------------- */
 .collapse-area {
-    background-color: #ffd6d6aa;
-    margin-bottom: 2px;
+    margin-bottom: .125rem;
+    border-radius: var(--radius);
+    background: #ffd6d6aa;
     box-shadow: -1px 2px 2px #777;
-    border-radius: 6px;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    overflow: hidden
 }
 
 .collapse-area>.heading {
     display: flex;
     align-items: flex-start;
-    background-color: #FBB;
-    position: relative;
-    width: auto;
-    padding: 5px 10px;
+    gap: .25rem;
+    padding: .3125rem .625rem;
+    font-size: 1.35rem;
     cursor: pointer;
-    font-size: 135%;
-    box-shadow: 0px 1px 1px #777;
+    background: var(--c-primary);
+    box-shadow: 0 1px 1px #777
 }
 
 .collapse-area>.heading:hover {
-    background-color: #F99A;
+    background: #F99A
 }
 
 .ic-collapse-arrow {
-    margin-right: 5px;
-    color: rgba(255, 101, 101, 0.85);
+    color: #ff6565d9;
     font-weight: bold;
-    font-style: inherit;
-    transform: rotate(0deg);
-    transition: all 0.3s ease-in-out;
+    transition: .3s
 }
 
 .ic-collapse-arrow::after {
-    content: '>';
+    content: '>'
 }
 
 .collapse-area>.collapse-content {
     display: none;
-    height: 0px;
-    padding: 0px 15px;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    height: 0;
+    padding: 0 15px;
+    padding-bottom: 20px;
+    overflow: hidden
 }
 
+/* Pixiv preview  -------------------------------------- */
 #pixiv-img-box {
     position: relative;
-    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
     height: 200px;
     max-height: 600px;
     margin: 5px;
     padding: 5px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: #fffb;
     border: 1px solid #DDD;
-    border-radius: 6px;
-    overflow: hidden;
-    display: block;
-    transition: height 0.3s ease-in-out;
+    border-radius: var(--radius);
+    background: #fffb;
+    overflow: hidden
 }
 
 #pixiv-img-box img {
-    width: 100%;
-    max-height: 600px;
-    object-fit: contain;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: none;
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
     backdrop-filter: blur(3px);
-    visibility: hidden;
+    visibility: hidden
 }
 
 #pixiv-img-box-menu {
@@ -280,259 +265,191 @@ input[type="file"] {
     left: 50%;
     transform: translate(-50%, -89%);
     width: 100%;
-    height: 0px;
-    padding-left: 10px;
-    background-color: rgba(34, 34, 34, 0.65);
-    display: block;
+    height: 0;
+    background: rgba(34, 34, 34, .65);
     overflow: hidden;
-    scrollbar-width: 0;
-    transition: height 0.3s ease-in-out;
+    scrollbar-width: none
 }
 
-#pixiv-img-box-menu>nav {
-    position: relative;
+#pixiv-img-box-menu nav {
     float: right;
-    align-content: center;
     height: 100%;
-    margin-right: 30px;
+    margin-right: 30px
 }
 
-#pixiv-img-box-menu>nav>button {
-    background-color: rgba(34, 34, 34, 0.155);
+#pixiv-img-box-menu button {
     height: 100%;
-    padding: 0px 15px;
-    margin: 0px;
+    padding: 0 15px;
+    margin: 0;
+    background: rgba(34, 34, 34, .155)
 }
 
-#pixiv-img-box-menu>nav>button:hover {
-    background-color: rgba(34, 34, 34, 0.50);
+#pixiv-img-box-menu button:hover {
+    background: rgba(34, 34, 34, .5)
 }
 
-[pd] {
-    padding: 6px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-#copy-api-addr {
-    position: fixed;
-    top: 84%;
-    left: 70%;
-    background-color: #FCC;
-    font-size: 115%;
-    box-shadow: 0px 1px 1px #777;
-    padding: 10px;
-}
-
-#share {
-    position: relative;
-    float: right;
-}
-
-tab {
-    width: 100%;
-    /*background-color : #A44;*/
-}
-
-tab name,
-tab content {
-    padding: 2px;
-    text-shadow: none;
-}
-
-tab name {
-    background-color: #FBB;
-    font-size: 140%;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 94.5%;
-    border-bottom: 3px solid #FAA;
-}
-
-tab:hover content,
-tab content:hover,
-tipbox {
-    background-color: rgba(244, 127, 127, 0.1);
-    padding-left: 5px;
-    padding-right: 5px;
-    backdrop-filter: blur(3px);
-    text-shadow: none;
-    position: absolute;
-    max-height: 50%;
-    z-index: 2;
-    overflow-y: auto;
-    width: 78%;
-}
-
-tab content {
-    display: none;
-    text-shadow: none;
-}
-
-input,
-textarea {
-    width: 100%;
-    margin: 5px;
-    border: 1px solid #adadad;
-    outline: none;
-    box-sizing: border-box;
-    background-color: rgba(255, 238, 238, 0.438);
-    backdrop-filter: blur(3px);
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-input {
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-input:focus {
-    background-color: rgba(231, 216, 216, 0.438);
-}
-
-textarea {
-    font-size: 115%;
-    min-height: 125px;
-    transition: none;
-    resize: vertical;
-}
-
-textarea:focus {
-    background-color: rgba(231, 216, 216, 0.438);
-}
-
-[fw] {
-    width: 100%;
-}
-
-[ps] {
-    top: 83%;
-}
-
-btn:active,
-[btn]:active {
-    background-color: #FAA;
-}
-
+/* Tool cards ------------------------------------------ */
 #tool-list {
     display: inline-block;
     margin-left: 10px;
-    padding: 0;
+    padding: 0
 }
 
 #tool-list li::marker {
-    content: "";
+    content: ""
 }
 
 #tool-item {
     display: inline-block;
-    background-color: #FAA;
     width: 110px;
+    margin: 5px;
+    padding: 10px 20px;
+    background: #FAA;
     border-radius: 10px;
     color: #FFF;
-    vertical-align: top;
-    padding: 10px 20px;
-    margin: 5px;
+    vertical-align: top
 }
 
 #tool-item #name {
-    font-size: 125%;
-    border-bottom: 1px solid #FFF;
+    margin-bottom: var(--sp-xs);
     padding-bottom: 5px;
+    border-bottom: 1px solid #FFF;
+    font-size: 1.25rem
 }
 
 #tool-item #info {
-    padding: 7px 0px;
+    padding: 7px 0
 }
 
 #tool-item a {
-    color: #FFF;
+    color: #FFF
 }
 
 #tool-item a:hover {
-    transition: color 0.3s ease-in-out;
-    background-size: 0 1px;
-    color: rgb(103, 165, 216);
+    color: #67A5D8;
+    transition: .25s;
+    background-size: 0 1px
 }
 
-input[type="file"] {
-    background-color: #FAA;
-    border-radius: 6px;
-    color: #FFF;
-    padding: 7px;
-    text-shadow: none;
+/* Tabs / Tipbox --------------------------------------- */
+tab {
+    width: 100%
 }
 
-.swal-text,
-.swal-content,
-.swal-title,
-.swal-button,
-.swal-content__input,
-.none-shadow {
-    text-shadow: none;
+tab name {
+    display: block;
+    padding: 2px 10px;
+    font-size: 1.4rem;
+    background: var(--c-primary);
+    border-bottom: 3px solid #FAA
 }
 
-.light-shadow {
-    text-shadow: 0px 2px 5px #222;
+tab content {
+    display: none
 }
 
-.hide {
-    display: none;
+:is(tab:hover content, tab content:hover, tipbox) {
+    background: rgba(244, 127, 127, .1);
+    padding: 0 5px;
+    position: absolute;
+    width: 78%;
+    max-height: 50%;
+    overflow-y: auto;
+    backdrop-filter: blur(3px)
 }
 
 tipbox {
-    max-height: 40%;
     width: 40%;
+    max-height: 40%
 }
 
 tipbox name {
     display: block;
-    padding: 5px;
-    align-content: center;
-    padding-left: 10px;
-    border-bottom: 1px solid #FFF;
+    padding: 5px 10px;
+    border-bottom: 1px solid #FFF
 }
 
+/* Copy Button fixed ----------------------------------- */
+#copy-api-addr {
+    position: fixed;
+    top: 84%;
+    left: 70%;
+    padding: 10px;
+    font-size: 1.15rem;
+    background: #FCC;
+    box-shadow: 0 1px 1px #777
+}
+
+/* Misc utilities -------------------------------------- */
+.no-tap-highlight {
+    -webkit-tap-highlight-color: transparent
+}
+
+.hide {
+    display: none
+}
+
+.light-shadow {
+    text-shadow: 0 2px 5px #222
+}
+
+.none-shadow,
+.swal-text,
+.swal-content,
+.swal-title,
+.swal-button,
+.swal-content__input {
+    text-shadow: none
+}
+
+/* Links list appear animation -------------------------- */
 #links li {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-20px)
 }
 
 #links li.fade-in {
-    animation: fadeIn 0.3s ease forwards;
+    animation: slideFade .3s forwards
 }
 
-@keyframes fadeIn {
+@keyframes slideFade {
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: none
     }
 }
 
+/* Spinner --------------------------------------------- */
 .loading {
-    opacity: 0;
+    opacity: 0
 }
 
 .loading-spinner {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    border: 3px solid #FBB;
-    border-top: 3px solid transparent;
+    border: 3px solid var(--c-primary);
+    border-top-color: transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%)
+}
+
+/* Fade-in -------------------------------------- */
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes spin {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
+    to {
+        transform: translate(-50%, -50%) rotate(360deg)
     }
 }
