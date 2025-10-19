@@ -27,7 +27,7 @@ html {
 
 body {
     padding: 80px 5% 0;
-    background: url(https://postimage.me/images/2024/08/08/bg.jpg) center/cover fixed no-repeat;
+    background: url(bg.jpg) center/cover fixed no-repeat;
 }
 
 :is(h, top, bl, [bl], tab, tab name, tab content, [fw], tool name, tool info,
