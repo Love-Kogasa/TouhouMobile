@@ -10,9 +10,9 @@ img.onload = function() {
   pixiv_img_box.style.height = img.clientHeight + 'px'
 };
 get.onclick = function(){
-    img.src = `https://pixiv.re/${inp.value}.png`
+    img.src = `https://pixiv.shojo.cn/${inp.value}`
     dow.onclick = function(){
-      open(`https://pixiv.re/${inp.value}.png`)
+      open(`https://pixiv.shojo.cn/${inp.value}`)
     }
     img.style.visibility = "visible"
     img.title = inp.value
