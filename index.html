@@ -1,107 +1,82 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
-  <meta name="description" content="车万Project 手机资源">
-  <title>TouhouMobile - 主页</title>
-  <link rel="stylesheet" href="./style/index.css">
-  <link rel="icon" href="./group.png" />
-  <script src="./module/sweetalert.min.js"></script>
-</head>
-
-<body>
-  <!-- 加载动画 -->
-  <div id="loading-spinner" class="loading-spinner"></div>
-
-  <div id="head-menu" class="loading">
-    <a id="head-title" href="javascript:void(0)">
-      <img src="favicon.png" height="32px" /> - Touhou Mobile
-    </a>
-  </div>
-  <div id="main-content" class="loading">
-    <h2>TouhouMobile</h2>
-    <div pd>
-      <div class="left-border-line">
-        TouhouMobile 是一个开源公共的仓库<br>
-        用于方便车万新人获取手机车万资源啦<br>
-        少走些弯路嘛<br>
-        QQ群号 : 744890481<br>
-        <b>不会画图和设计，所以网站可能不是很美观 抱歉</b>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="车万Project 手机资源">
+    <title>TouhouMobile - 主页</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="icon" href="./group.png" />
+    <script src="./module/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div id="head-menu">
+      <a id="head-title" href="javascript:void(0)">
+        <img src="favicon.png" height="32px" /> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile</h2>
+      <div pd>
+        <div class="left-border-line">
+          TouhouMobile 是一个开源公共的仓库<br>
+          用于方便车万新人获取手机车万资源啦<br>
+          少走些弯路嘛<br>
+          QQ群号 : 744890481<br>
+          <b>不会画图和设计，所以网站可能不是很美观 抱歉</b>
+        </div>
+      </div>
+      <h2>本站站点</h2>
+      <ul id="links">
+        <li><a href="#">☯ Loading 一般不会看到的啦</a></li>
+      </ul>
+      <h2>News 新闻</h2>
+      <div pd>
+        <div class="left-border-line">
+          7.25 TouHouMobile计划正式启动<br>
+          欢迎大家访问w<br>
+          有能力的在Github上给个star嘛~<br>
+          7.30 TouhouMobile更新了字体阴影<br>
+          现在字体明显轻易了好多吧w<br>
+          8.15 TouhouMobile才用了大佬valloside写的样式<br>
+          THM更美观了，样式表也更规范了
+        </div>
+      </div><br><br><br><br>
+      <div align="right">
+        <a href="./style/bg.jpg" download="reimu.jpg" btn style="color : #FFF;">下载背景图片</a><br><br>
+        <a btn href="./money.html" style="color : #FFF;">给咱赞助w</a>
       </div>
     </div>
-    <h2>本站站点</h2>
-    <ul id="links">
-      <li><a href="#">☯ Loading 一般不会看到的啦</a></li>
-    </ul>
-    <h2>News 新闻</h2>
-    <div pd>
-      <div class="left-border-line">
-        7.25 TouHouMobile计划正式启动<br>
-        欢迎大家访问w<br>
-        有能力的在Github上给个star嘛~<br>
-        7.30 TouhouMobile更新了字体阴影<br>
-        现在字体明显轻易了好多吧w<br>
-        8.15 TouhouMobile采用了大佬valloside(github)写的样式<br>
-        THM更美观了，样式表也更规范了
-      </div>
-    </div><br><br><br><br>
-    <div align="right">
-      <a href="./style/bg.jpg" download="reimu.jpg" btn style="color : #FFF;">下载背景图片</a><br><br>
-      <a btn href="./money.html" style="color : #FFF;">给咱赞助w</a>
-    </div>
-  </div>
-
-  <script>
-    // 添加在其他脚本之前
-    function showContent() {
-      document.getElementById('loading-spinner').style.display = 'none';
-      document.querySelectorAll('.loading').forEach(el => {
-        el.style.opacity = '1';
-        el.style.transition = 'opacity 0.5s ease-in-out';
-      });
-    }
-
-    // 预加载背景图
-    const bgImage = new Image();
-    bgImage.src = 'style/bg.jpg';
-    bgImage.onload = showContent;
-    bgImage.onerror = showContent; // 如果加载失败也显示内容
-  </script>
-
-  <script src="./script/home.js"></script>
-  <script type="module">
-    import { loadOml2d } from "./module/live2d.js"
-    navigator.language.toLowerCase().includes("zh") || swal("Hello", "This webpage is in Chinese. If you are not a native Chinese speaker, please visit thm.us.kg", "error")
-      (window.location.href.indexOf("thm.lapis-net.top") + 1 || window.location.href.indexOf("localhost") + 1 || window.location.href.indexOf("127.0.0.1") + 1) || swal("提示", "建议使用 thm.lapis-net.top 进入THM\n更快，无需魔法", "success")
-    loadOml2d({
-      mobileDisplay: true,
-      dockedPosition: "left",
-      tips: {
-        copyTips: "Funky 6w9",
-        welcomeTips: "Baka!!!",
-        message: {
-          afternoon: "中午好( 6w9 )",
-          daybreak: "新的一天又要开始了( ⑨O⑨ )",
-          dusk: "Baka！( uwu )",
-          morning: "=O= Funky!",
-          night: "Baka！( uwu )",
-          noon: "⑨刚才正在冻青蛙",
-          lateNight: "困死啦 ( 6w9 )",
-          weeHour: "困死啦 ( 6w9 )"
-        }
-      },
-      models: [
-        {
-          name: "Cirno",
-          path: "https://cdn.jsdelivr.net/npm/live2d-widget-model-cirno@0.0.2/assets/1.model.json",
-          mobileScale: 0.2,
-          scale: 0.2
-        }
-      ]
-    })
-  </script>
-</body>
-
+    <script src="./script/home.js"></script>
+    <script type="module">
+      import { loadOml2d } from "./module/live2d.js"
+      navigator.language.toLowerCase().includes( "zh" ) || swal( "Hello", "This webpage is in Chinese. If you are not a native Chinese speaker, please visit thm.us.kg", "error" )
+      loadOml2d({
+        mobileDisplay : true,
+        dockedPosition : "left",
+        tips : {
+          copyTips : "Funky 6w9",
+          welcomeTips : "Baka!!!",
+          message : {
+            afternoon : "中午好( 6w9 )",
+            daybreak : "新的一天又要开始了( ⑨O⑨ )",
+            dusk : "Baka！( uwu )",
+            morning : "=O= Funky!",
+            night : "Baka！( uwu )",
+            noon : "⑨刚才正在冻青蛙",
+            lateNight : "困死啦 ( 6w9 )",
+            weeHour : "困死啦 ( 6w9 )"
+          }
+        },
+        models : [
+          {
+            name : "Cirno",
+            path : "https://cdn.jsdelivr.net/npm/live2d-widget-model-cirno@0.0.2/assets/1.model.json",
+            mobileScale : 0.2,
+            scale : 0.2
+          }
+        ]
+      })
+    </script>
+  </body>
 </html>
