@@ -1,5 +1,10 @@
 var touhouMobile = {
     stg : {
+        "Eagler-Touhou": {
+            url: "http://touhou.vip/eagler-touhou/",
+            info: "(适配手机) 在网页端玩东方正作",
+            star: 5
+        },
         "东方夏夜祭" : {
             url : "http://m.xz7.com/downinfo/596997.html",
             info : "一款由电脑移植的车万stg游戏<br>从手感和体验来说都相当不错w<br>不太适合新手玩<br>",
